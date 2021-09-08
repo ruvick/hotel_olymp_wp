@@ -5,13 +5,8 @@
 
 					<a href="index.html" class="footer__logo logo-icon"></a>
 
-					<ul class="footer__menu menu__list sibling-fade d-flex">
-						<li><a href="numbers.html" class="menu__link">Номера</a></li>
-						<li><a href="restaurant.html" class="menu__link">Ресторан</a></li>
-						<li><a href="services.html" class="menu__link">Наши услуги</a></li>
-						<li><a href="stock.html" class="menu__link">Спецпредложения</a></li>
-						<li><a href="contacts.html" class="menu__link">Контакты</a></li>
-					</ul> 
+					<?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'footer__menu menu__list',
+					'container_class' => 'footer__menu menu__list','container' => false )); ?> 
 
 					<div class="footer__line"></div>
 

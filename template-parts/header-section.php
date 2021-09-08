@@ -9,13 +9,8 @@
 
 				<div class="header__menu menu">
 					<nav class="menu__body">
-						<ul class="menu__list sibling-fade d-flex">
-							<li><a href="numbers.html" class="menu__link">Номера</a></li>
-							<li><a href="restaurant.html" class="menu__link">Ресторан</a></li>
-							<li><a href="services.html" class="menu__link">Наши услуги</a></li>
-							<li><a href="stock.html" class="menu__link">Спецпредложения</a></li>
-							<li><a href="contacts.html" class="menu__link">Контакты</a></li>
-						</ul> 
+						<?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list',
+						'container_class' => 'menu__list','container' => false )); ?> 
 					</nav>
 				</div>
 
@@ -42,11 +37,6 @@
 </header>
 
 <nav class="mob-menu">
-	<ul class="mob-menu__list">
-		<li><a href="numbers.html" class="menu__link">Номера</a></li>
-		<li><a href="restaurant.html" class="menu__link">Ресторан</a></li>
-		<li><a href="services.html" class="menu__link">Наши услуги</a></li>
-		<li><a href="stock.html" class="menu__link">Спецпредложения</a></li>
-		<li><a href="contacts.html" class="menu__link">Контакты</a></li>
-	</ul>
+	<?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',
+	'container_class' => 'mob-menu__list','container' => false )); ?> 
 </nav>

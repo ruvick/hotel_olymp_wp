@@ -1053,6 +1053,7 @@ body.ie .ibg img {
   margin-right: 15px; }
 
 .menu__list {
+  display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   .menu__list li {
