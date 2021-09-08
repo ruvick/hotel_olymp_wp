@@ -94,6 +94,62 @@ function add_tocart(elem, countElem) {
 }
 //------------------------------------------------------------------------------------------------------------
 
+
+const iconMenu = document.querySelector(".icon-menu");
+const body = document.querySelector("body");
+const menuBody = document.querySelector(".mob-menu");
+const menuListItemElems = document.querySelector(".mob-menu__list");
+const mobsearch = document.querySelector(".mob-search");
+const headsearch = document.querySelector(".header__search");
+
+//BURGER
+if (iconMenu) {
+	iconMenu.addEventListener("click", function () {
+		iconMenu.classList.toggle("active");
+		body.classList.toggle("lock");
+		menuBody.classList.toggle("active");
+	});
+}
+
+// Закрытие моб меню при клике на якорную ссылку
+if (menuListItemElems) {
+	menuListItemElems.addEventListener("click", function () {
+		iconMenu.classList.toggle("active");
+		body.classList.toggle("lock");
+		menuBody.classList.toggle("active");
+	});
+}
+
+
+// Закрытие моб меню при клике вне области меню 
+window.addEventListener('click', e => { // при клике в любом месте окна браузера
+	const target = e.target // находим элемент, на котором был клик
+	if (!target.closest('.icon-menu') && !target.closest('.mob-menu') && !target.closest('.mob-search') && !target.closest('.header__search') && !target.closest('._popup-link') && !target.closest('.popup')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+		iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
+		menuBody.classList.remove('active')
+		body.classList.remove('lock')
+		headsearch.classList.remove('active')
+	}
+})
+
+// Плавная прокрутка
+const smotScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
+
+smotScrollElems.forEach(link => {
+	link.addEventListener('click', (event) => {
+		event.preventDefault()
+		console.log(event);
+
+		const id = link.getAttribute('href').substring(1)
+		console.log('id : ', id);
+
+		document.getElementById(id).scrollIntoView({
+			behavior: 'smooth'
+		});
+	})
+});
+
+
 // Отправка на печать -------------------------------------------------------------------------------------------------------------
 function printit() {
 	if (window.print) {
@@ -258,6 +314,48 @@ $ = jQuery;
 // Маска телефона
 var inputmask_phone = { "mask": "+9(999)999-99-99" };
 jQuery("input[type=tel]").inputmask(inputmask_phone);
+
+
+// // Slider на главной
+$('.slider-about').slick({
+	arrows: false,
+	dots: true,
+	infinite: true,
+	speed: 2000,
+	slidesToShow: 1,
+	autoplay: true,
+	autoplaySpeed: 1800,
+	adaptiveHeight: true,
+		responsive: [
+		{
+			breakpoint: 770,
+			settings: {
+				dots: false,
+			}
+		}
+	]
+});
+
+
+// // Slider Номер
+$('.slider-room').slick({
+	arrows: false,
+	dots: true,
+	infinite: true,
+	speed: 2000,
+	slidesToShow: 1,
+	autoplay: true,
+	autoplaySpeed: 1800,
+	adaptiveHeight: true,
+			responsive: [
+		{
+			breakpoint: 770,
+			settings: {
+				dots: false,
+			}
+		}
+	]
+});
 
 
 // Открытие модального окна
