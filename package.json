@@ -21,6 +21,7 @@
     "send_carbon_fild": "scp -C -r inc/custom-fields-options rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/inc/",
     "mk_part_dir": "ssh rudikov-web@rudikov-web.myjino.ru \"mkdir -p domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/template-parts\"",
     "send_part": "scp -C -r template-parts rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/",
+    "send_part_one": "scp -C template-parts/header-section.php rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/template-parts/",
     "mk_part_img": "ssh rudikov-web@rudikov-web.myjino.ru \"mkdir -p domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/img\"",
     "send_img": "scp -r img rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/",
     "mk_part_js": "ssh rudikov-web@rudikov-web.myjino.ru \"mkdir -p domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/js\"",

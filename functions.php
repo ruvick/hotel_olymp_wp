@@ -572,3 +572,11 @@ function send_cart()
 		wp_die('НО-НО-НО!', '', 403);
 	}
 }
+
+function get_url_switcher($leng){
+	$arr = pll_the_languages( array(
+		"raw" => 1
+	) );
+
+	return $arr[$leng]["url"]; 
+}

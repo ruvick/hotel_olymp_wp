@@ -17,10 +17,12 @@
 				<a href="#" class="header__btn btn">Забронировать</a>
 
 				<div class="header__lang-switch d-flex">
-					<button class="header__lang-switch-ru">Ru</button>
+					<a href = "<? echo get_url_switcher("ru");?>" class="header__lang-switch-ru">Ru</a>
 					<span class="header__lang-switch-delimiter">/</span>
-					<button class="header__lang-switch-en">En</button>
+					<a href = "<? echo get_url_switcher("en");?>" class="header__lang-switch-en">En</a>
 				</div>
+
+				
 
 
 				<div class="menu__icon icon-menu">
