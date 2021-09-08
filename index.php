@@ -4,8 +4,8 @@
 
 <main class="page">
 	<section id="about" class="slider-about about">
-		<div class="slider-about__item"><img src="<?php echo get_template_directory_uri();?>/img/about-bg.jpg" alt=""></div>
 		<div class="slider-about__item"><img src="<?php echo get_template_directory_uri();?>/img/about-bg-2.jpg" alt=""></div>
+		<div class="slider-about__item"><img src="<?php echo get_template_directory_uri();?>/img/about-bg.jpg" alt=""></div>
 		<div class="slider-about__item"><img src="<?php echo get_template_directory_uri();?>/img/about-bg-3.jpg" alt=""></div>
 	</section>
 
@@ -14,38 +14,33 @@
 
 			<div class="greetings__text-block text-block">
 				<img src="<?php echo get_template_directory_uri();?>/img/text-block-logo.png" class="text-block__logo" alt="">
-				<h1 class="greetings__title title">Добро пожаловать в отель «Олимп»</h1>
-				<p>
-					Отель состоит из двух корпусов. Второй корпус построен и запущен в 2021 году. Общее количество номеров 56. Это современный и элегантный отель, 
-					ориентированный на деловых людей и туристов, обеспечивает комфортное проживание в роскошных номерах, оформленных в классическом стиле. Для гостей есть 
-					возможность посетить изысканный ресторан, а так же в распоряжении наших гостей бассейн и SPA зона. Изысканное сочетание классического комфорта - вот то, 
-					что привлекает гостей отеля.
-				</p>
+				<h1 class="greetings__title title"><?php echo carbon_get_theme_option('about_home_title'); ?></h1>
+				<p><?php echo carbon_get_theme_option('about_home'); ?></p>
 			</div>
 
 			<div class="greetings__icon-block d-flex">
 
 				<div class="advant__item advant-icon-01">
 					<h5>
-						Ухоженная охраняемая территория
+						Охраняемая и просторная <br> территория
 					</h5>
 				</div>
 
 				<div class="advant__item advant-icon-02">
 					<h5>
-						Отдых для всей самьи
+						Отдых для всей семьи
 					</h5>
 				</div>
 
 				<div class="advant__item advant-icon-03">
 					<h5>
-						Собственный SPA комплекс
+						SPA-комплекс <br> + бассейн 20 м
 					</h5>
 				</div>
 
 				<div class="advant__item advant-icon-04">
 					<h5>
-						Ресторан c уникальным меню
+						Ресторан европейской <br> кухни
 					</h5>
 				</div>
 
