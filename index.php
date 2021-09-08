@@ -59,7 +59,7 @@
 			<h2>Акции и спецпредложения</h2>
 
 			<div class="card-img__row d-flex">
-				
+
 				<div class="stock__card-img card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
@@ -118,7 +118,7 @@
 			<h2 class="offers__title title">Предложения для наших клиентов</h2>
 
 			<div class="card-img__row d-flex">
-				
+
 				<div class="offers__card-img card-img">
 					<!-- <div class="card-img__nuar"></div> -->
 					<h4>
@@ -164,42 +164,9 @@
 		</div>
 	</section>
 
-	<section id="contacts-bg" class="contacts-bg">
-		<div class="container">
+<?php get_template_part('template-parts/contacts-section');?>
 
-			<div class="contacts-bg__text-block text-block">
-				<img src="<?php echo get_template_directory_uri();?>/img/text-block-logo.png" class="text-block__logo" alt="">
-				<img src="<?php echo get_template_directory_uri();?>/img/text-block-logo.png" class="text-block__logo text-block__logo_2" alt="">
-				<img src="<?php echo get_template_directory_uri();?>/img/text-block-logo.png" class="text-block__logo text-block__logo_3" alt="">
-				<div class="contacts-bg__row d-flex">
-
-					<div class="contacts-bg__col">
-						<h3 class="contacts-bg__title title">Бронирование</h3>
-						<a href="tel:+79009388033" class="contacts-bg__tel">+7 900 938 80 33</a>
-					</div>
-
-					<div class="contacts-bg__col">
-						<h3 class="contacts-bg__title title">Ресторан</h3>
-						<a href="tel:+79009388033" class="contacts-bg__tel">+7 900 938 80 33</a>
-					</div>
-
-					<div class="contacts-bg__col">
-						<h3 class="contacts-bg__title title">Конференц-зал</h3>
-						<a href="tel:+79009388033" class="contacts-bg__tel">+7 900 938 80 33</a>
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-	</section>
-
-	<section id="index-map" class="index-map">
-		<div class="container">
-			<div id="map" class="index-map__map map"></div>
-		</div>
-	</section>
+<?php get_template_part('template-parts/map-section');?>
 
 </main>
 
