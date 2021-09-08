@@ -10,6 +10,7 @@
     "send_ms": "scp -C *.css rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/",
     "send_one": "scp -C page-calculator.php rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/",
     "send_one1": "scp -C themes-fields.php rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/",
+    "send_one2": "scp -C translate.php rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/",
     "send_head": "scp -C header.php rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/",
     "send_cat": "scp -C category.php rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/",
     "send_singl": "scp -C single.php rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/",

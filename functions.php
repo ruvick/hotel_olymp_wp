@@ -580,3 +580,5 @@ function get_url_switcher($leng){
 
 	return $arr[$leng]["url"]; 
 }
+
+include "translate.php";

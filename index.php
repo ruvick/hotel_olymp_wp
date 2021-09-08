@@ -31,25 +31,25 @@
 
 				<div class="advant__item advant-icon-01">
 					<h5>
-						Охраняемая и просторная <br> территория
+						<? echo pll_e("Охраняемая и просторная <br> территория") ?>
 					</h5>
 				</div>
 
 				<div class="advant__item advant-icon-02">
 					<h5>
-						Отдых для всей семьи
+						<? echo pll_e("Отдых для <br> всей семьи") ?>
 					</h5>
 				</div>
 
 				<div class="advant__item advant-icon-03">
 					<h5>
-						SPA-комплекс <br> + бассейн 20 м
+						<? echo pll_e("SPA-комплекс <br> + бассейн 20 м") ?>
 					</h5>
 				</div>
 
 				<div class="advant__item advant-icon-04">
 					<h5>
-						Ресторан европейской <br> кухни
+						<? echo pll_e("Ресторан европейской <br> кухни") ?>
 					</h5>
 				</div>
 
