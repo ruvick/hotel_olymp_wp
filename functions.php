@@ -573,6 +573,7 @@ function send_cart()
 	}
 }
 
+// Переключатель языков
 function get_url_switcher($leng){
 	$arr = pll_the_languages( array(
 		"raw" => 1

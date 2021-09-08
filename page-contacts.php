@@ -26,12 +26,12 @@ get_header(); ?>
 					<h1><? the_title();?></h1>  
 
 					<ul>
-						<li>307250, Россия, п. Иванино, ул. Ленина, 26</li>
+						<? $adr = carbon_get_theme_option("as_address"); if (!empty($adr)){?><li><? echo $adr; ?></li><?}?>
 						<li>Широта: 51°39′5.72″N (51.651588)</li>
 						<li>Долгота: 35°35′7.71″E (35.585474)</li>
 						<li><a href="tel:7(47131)21251">+7 (47131) 2-12-51</a></li>
 						<li><a href="tel:7(47131)21255">+7 (47131) 2-12-55</a></li>
-						<li><a href="mailto:gk.energotex@mail.ru">gk.energotex@mail.ru</a></li>
+						<? $mail = carbon_get_theme_option("as_email"); if (!empty($mail)){?><li><a href="mailto:<? echo $mail; ?>"><? echo $mail; ?></a></li><?}?>
 					</ul>
 				</div>
 
