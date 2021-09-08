@@ -128,7 +128,6 @@ window.addEventListener('click', e => { // при клике в любом ме�
 		iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
 		menuBody.classList.remove('active')
 		body.classList.remove('lock')
-		headsearch.classList.remove('active')
 	}
 })
 
@@ -358,6 +357,28 @@ $('.slider-room').slick({
 });
 
 
+	//CHECK
+	$.each($('.check'), function (index, val) {
+		if ($(this).find('input').prop('checked') == true) {
+			$(this).addClass('active');
+		}
+	});
+	$('body').off('click', '.check', function (event) { });
+	$('body').on('click', '.check', function (event) {
+		if (!$(this).hasClass('disable')) {
+			var target = $(event.target);
+			if (!target.is("a")) {
+				$(this).toggleClass('active');
+				if ($(this).hasClass('active')) {
+					$(this).find('input').prop('checked', true);
+				} else {
+					$(this).find('input').prop('checked', false);
+				}
+			}
+		}
+	});
+
+
 // Открытие модального окна
 $(".popup-quest").on('click', function (e) {
 	e.preventDefault();
@@ -373,10 +394,9 @@ $('.newButton').click(function (e) {
 	e.preventDefault();
 	const name = $("#form-callback-name").val();
 	const tel = $("#form-callback-tel").val();
-	const email = $("#form-callback-email").val();
 
 	if (jQuery("#form-callback-tel").val() == "") {
-		jQuery("#form-callback-tel").css("border", "1px solid red");
+		jQuery("#form-callback-tel").css("border-bottom", "1px solid red"); 
 		return;
 	}
 
@@ -393,7 +413,6 @@ $('.newButton').click(function (e) {
 				nonce: allAjax.nonce,
 				name: name,
 				tel: tel,
-				email: email,
 			}
 		);
 

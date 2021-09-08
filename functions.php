@@ -1,6 +1,6 @@
 <?php
 
-define("COMPANY_NAME", "АВТОМОБИЛЬНЫЕ СИДЕНЬЯ");
+define("COMPANY_NAME", "ГК 'ОЛИМП'");
 define("MAIL_RESEND", "noreply@ultrakresla.ru");
 
 //----Подключене carbon fields
@@ -158,11 +158,11 @@ function my_assets()
 
 	wp_enqueue_script('jquery');
 
-	wp_enqueue_script('amodal', get_template_directory_uri() . '/js/jquery.arcticmodal-0.3.min.js', array(), $scrypt_version, true); //Модальные окна
+	// wp_enqueue_script('amodal', get_template_directory_uri() . '/js/jquery.arcticmodal-0.3.min.js', array(), $scrypt_version, true); //Модальные окна
 	wp_enqueue_script('mask', get_template_directory_uri() . '/js/jquery.inputmask.bundle.js', array(), $scrypt_version, true); //маска для инпутов
-	wp_enqueue_script('lightbox', get_template_directory_uri() . '/js/lightbox.min.js', array(), $scrypt_version, true); //Лайтбокс
+	// wp_enqueue_script('lightbox', get_template_directory_uri() . '/js/lightbox.min.js', array(), $scrypt_version, true); //Лайтбокс
 	wp_enqueue_script('slick', get_template_directory_uri() . '/js/slick.min.js', array(), $scrypt_version, true); //Слайдер
-	wp_enqueue_script('fancybox', get_template_directory_uri() . '/js/jquery.fancybox.min.js', array(), $scrypt_version, true); //fancybox
+	// wp_enqueue_script('fancybox', get_template_directory_uri() . '/js/jquery.fancybox.min.js', array(), $scrypt_version, true); //fancybox
 	// wp_enqueue_script('html2pdf', get_template_directory_uri() . '/js/html2pdf.bundle.js', array(), $scrypt_version, true); //Create PDF-page 
 
 	wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), $scrypt_version, true); // Подключение основного скрипта в самом конце

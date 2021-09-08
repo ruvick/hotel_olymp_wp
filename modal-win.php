@@ -1,7 +1,7 @@
 <!-- В этом файле описываем все  всплывающие окна -->
 
 <!-- Popup-JS -->
-<div class="popup popup_callback">
+<div class="popup popup_callback"> 
 	<div class="popup__content">
 		<div class="popup__body">
 			<div class="popup__close"></div>
@@ -15,9 +15,9 @@
 					<div class="headen_form_blk">
 						<p>Оставьте заявку и мы свяжемся с вами в течении 15 минут</p>
 						<form action="#" class="popup__form">
-							<input type="text" name="name" placeholder="Имя" id="form-callback-name" class="popup__form-input input">
-							<input type="tel" name="tel" placeholder="Телефон*" id="form-callback-tel" class="popup__form-input input">
-							<input type="text" name="email" placeholder="Email" id="form-callback-email" class="popup__form-input input">
+							<input type="text" name="name" placeholder="Имя" id="form-callback-nam" class="popup__form-input input">
+							<input type="tel" name="tel" placeholder="Телефон*" id="form-callback-te" class="popup__form-input input">
+							<input type="text" name="email" placeholder="Email" id="form-callback-emai" class="popup__form-input input">
 							<p>Заполняя данную форму вы соглашаетесь с <a href="<?php echo get_permalink(452); ?>">политикой конфиденциальности</a></p>
 							<button class="popup__form-btn newButton btn">Отправить заявку</button>
 						</form>
