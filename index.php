@@ -4,10 +4,19 @@
 
 <main class="page">
 	<section id="about" class="slider-about about">
-		<div class="slider-about__item"><img src="<?php echo get_template_directory_uri();?>/img/about-bg-2.jpg" alt=""></div>
-		<div class="slider-about__item"><img src="<?php echo get_template_directory_uri();?>/img/about-bg.jpg" alt=""></div>
-		<div class="slider-about__item"><img src="<?php echo get_template_directory_uri();?>/img/about-bg-3.jpg" alt=""></div>
-	</section>
+		<?
+		$pict = carbon_get_theme_option('slider_index');
+		if ($pict) {
+			$pictIndex = 0;
+			foreach ($pict as $item) {
+				?>
+				<div class="slider-about__item"><img src="<?php echo wp_get_attachment_image_src($item['slider_img'], 'full')[0]; ?>" alt=""></div>
+				<?
+				$pictIndex++;
+			}
+		}
+		?>
+	</section> 
 
 	<section id="greetings" class="greetings">
 		<div class="container"> 
@@ -159,9 +168,9 @@
 		</div>
 	</section>
 
-<?php get_template_part('template-parts/contacts-section');?>
+	<?php get_template_part('template-parts/contacts-section');?>
 
-<?php get_template_part('template-parts/map-section');?>
+	<?php get_template_part('template-parts/map-section');?>
 
 </main>
 
