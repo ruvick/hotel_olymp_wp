@@ -163,6 +163,20 @@
 					</h4>
 				</div>		
 
+				<div class="offers__card-img card-img">
+					<!-- <div class="card-img__nuar"></div> -->
+					<h4>
+						Гриль Hous
+					</h4>
+				</div>		
+
+				<div class="offers__card-img card-img">
+					<!-- <div class="card-img__nuar"></div> -->
+					<h4>
+						Рыбалка
+					</h4>
+				</div>		
+
 			</div>
 
 		</div>
