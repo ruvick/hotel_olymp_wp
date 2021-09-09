@@ -126,6 +126,8 @@ set_post_thumbnail_size(185, 185);
 
 add_post_type_support('page', 'excerpt');
 
+add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
+
 // Подключение стилей и nonce для Ajax в админку 
 add_action('admin_head', 'my_assets_admin');
 function my_assets_admin()

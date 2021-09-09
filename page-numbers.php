@@ -23,61 +23,35 @@ get_header(); ?>
 			<h1><?php the_title();?></h1>
 
 			<div class="card-action__body">
-				
-				<div class="card-action__item d-flex">
-					<div class="card-action__img">
-						<img src="<?php echo get_template_directory_uri();?>/img/numbers/01.jpg" alt="">
-					</div>
-					<div class="card-action__descp">
-						<h3 class="card-action__title title">
-							Номер Lux
-						</h3>
-						<p class="card-action__paragrafy">
-							Великолепный номер площадью 27 кв.м. 
-							Предлагаем Вам погрузиться в атмосферу спокойствия в 
-							сочетании с ощущением домашнего уюта.
-						</p>
-						<p class="card-action__price">4950<span>руб/сутки</span></p>
-						<a href="<?php echo get_permalink(28);?>" class="card-action__btn btn">Подробнее</a> 
-					</div>
-				</div>
-
-				<div class="card-action__item d-flex">
-					<div class="card-action__img">
-						<img src="<?php echo get_template_directory_uri();?>/img/numbers/02.jpg" alt="">
-					</div>
-					<div class="card-action__descp">
-						<h3 class="card-action__title title">
-							Номер Джуниор СЮИТ
-						</h3>
-						<p class="card-action__paragrafy">
-							Комфортабельный двухместный номер площадью 18 кв.м., 
-							украшенный картинами и элементами деревянного декора, 
-							предлагают особенную домашнюю атмосферу.
-						</p>
-						<p class="card-action__price">4500<span>руб/сутки</span></p>
-						<a href="<?php echo get_permalink(32);?>" class="card-action__btn btn">Подробнее</a>
-					</div>
-				</div>
-
-				<div class="card-action__item d-flex">
-					<div class="card-action__img">
-						<img src="<?php echo get_template_directory_uri();?>/img/numbers/03.jpg" alt="">
-					</div>
-					<div class="card-action__descp">
-						<h3 class="card-action__title title">
-							Номер СТАНДАРТ
-						</h3>
-						<p class="card-action__paragrafy">
-							Прекрасные и уютные номера ,оснащены всем необходимым 
-							для отдыха и работы широкого круга людей. 
-							Номера восхищают дизайном и современной техникой.
-						</p>
-						<p class="card-action__price">3500<span>руб/сутки</span></p>
-						<a href="<?php echo get_permalink(36);?>" class="card-action__btn btn">Подробнее</a>
-					</div>
-				</div>
-
+					<?php
+				$page_children = new WP_Query(
+					array(
+						'post_type' => 'page',
+						'post_parent' => '24',
+						'order'       => 'ASC',
+					)
+				);
+				if ($page_children->have_posts()) :
+					while ($page_children->have_posts()) : $page_children->the_post();
+						?>
+						<div class="card-action__item d-flex">
+							<div class="card-action__img">
+								<img src="<?php  $imgTm = get_the_post_thumbnail_url( get_the_ID(), "tominiatyre" ); echo empty($imgTm)?get_bloginfo("template_url")."/img/no-photo.jpg":$imgTm; ?>" alt="">
+							</div>
+							<div class="card-action__descp">
+								<h3 class="card-action__title title">
+									<?php the_title(); ?>
+								</h3>
+								<p class="card-action__paragrafy"><?echo carbon_get_post_meta(get_the_ID(),"offer_smile_descr"); ?></p>
+								<p class="card-action__price"><?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?><span>руб/сутки</span></p>
+								<a href="<?php the_permalink(); ?>" class="card-action__btn btn">Подробнее</a> 
+							</div>
+						</div>
+						<?php
+					endwhile;
+				endif;
+				wp_reset_query();
+				?>
 			</div>
 
 		</div>
