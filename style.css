@@ -2225,24 +2225,24 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   margin: 10px 0; }
 /* Popup JS End*/
 
-.form-section {
+.applic-section {
   padding: 25px 0 45px 0;
 }
 
-.form-section .offers__title {
+.applic-section .offers__title {
     margin-bottom: 25px;
 }
 
-.form-section p  {
+.applic-section p  {
   color: #161615;
   margin-bottom: 25px;
 }
 
-.form-section .container {
+.applic-section .container {
   text-align: center;
 }
 
-.form-section__btn {
+.applic-section__btn {
   background: #A46A37;
 }
 
@@ -2606,7 +2606,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     height: auto; }
   .restaurant__img {
     height: auto; } 
-  .form-section {
+  .applic-section {
     padding: 15px 0 35px 0;}
 }
 

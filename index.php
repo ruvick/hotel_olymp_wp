@@ -168,7 +168,7 @@
 		</div>
 	</section>
 
-	<?php get_template_part('template-parts/form-section');?>
+	<?php get_template_part('template-parts/applic-section');?>
 
 	<?php get_template_part('template-parts/contacts-section');?>
 
