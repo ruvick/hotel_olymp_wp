@@ -165,10 +165,10 @@
 					</h4>
 				</a>
 
-				<a href = "<? echo pll_get_permalink(48); ?>" class="offers__card-img card-img">
+				<a href = "<? echo pll_get_permalink(68); ?>" class="offers__card-img card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
-						Гриль Hous и рыбалка
+						Гриль Hous и <br> рыбалка
 					</h4>
 				</a>
 

@@ -20,7 +20,7 @@ get_header(); ?>
 			}
 			?> 
 
-			<h1>Наши услуги</h1>
+			<h1><?php the_title();?></h1>
 
 			<div class="services__row d-flex">
 

@@ -38,7 +38,7 @@ get_header(); ?>
 							сочетании с ощущением домашнего уюта.
 						</p>
 						<p class="card-action__price">4950<span>руб/сутки</span></p>
-						<a href="room.html" class="card-action__btn btn">Подробнее</a>
+						<a href="<?php echo get_permalink(28);?>" class="card-action__btn btn">Подробнее</a> 
 					</div>
 				</div>
 
@@ -56,7 +56,7 @@ get_header(); ?>
 							предлагают особенную домашнюю атмосферу.
 						</p>
 						<p class="card-action__price">4500<span>руб/сутки</span></p>
-						<a href="#" class="card-action__btn btn">Подробнее</a>
+						<a href="<?php echo get_permalink(32);?>" class="card-action__btn btn">Подробнее</a>
 					</div>
 				</div>
 
@@ -74,7 +74,7 @@ get_header(); ?>
 							Номера восхищают дизайном и современной техникой.
 						</p>
 						<p class="card-action__price">3500<span>руб/сутки</span></p>
-						<a href="#" class="card-action__btn btn">Подробнее</a>
+						<a href="<?php echo get_permalink(36);?>" class="card-action__btn btn">Подробнее</a>
 					</div>
 				</div>
 
