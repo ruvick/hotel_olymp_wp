@@ -13,7 +13,7 @@
 						Ваше сообщение успешно отправлено.
 					</div>
 					<div class="headen_form_blk">
-						<p>Оставьте заявку и мы свяжемся с вами в течении 15 минут</p>
+						<p>Оставьте заявку и мы свяжемся с вами в течении 15 минут</p> 
 						<form action="#" class="popup__form">
 							<input type="text" name="name" placeholder="Имя" id="form-callback-nam" class="popup__form-input input">
 							<input type="tel" name="tel" placeholder="Телефон*" id="form-callback-te" class="popup__form-input input">

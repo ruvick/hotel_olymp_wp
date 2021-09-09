@@ -12,9 +12,9 @@
 						<?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu__list',
 						'container_class' => 'menu__list','container' => false )); ?> 
 					</nav>
-				</div>
+				</div> 
 
-				<a href="#" class="header__btn btn">Забронировать</a>
+				<a href="#callback" class="header__btn _popup-link btn">Забронировать</a>
 
 				<div class="header__lang-switch d-flex">
 					<a href = "<? echo get_url_switcher("ru");?>" class="header__lang-switch-ru">Ru</a>
