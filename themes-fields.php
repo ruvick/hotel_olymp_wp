@@ -25,6 +25,8 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
       ->add_fields(array(
         Field::make('image', 'slider_img', 'Картинка слайдера')
           ->set_width(50),
+        Field::make('image', 'slider_img_mob', 'Картинка слайдера моб')
+          ->set_width(50),
       ))
   ))
     ->add_tab('Контакты', array(

@@ -2261,6 +2261,10 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   background: #A46A37;
 }
 
+.slider-about__item-mob {
+  display: none !important;
+}
+
 
 @media (max-width: 1700px) {
   .header__container {
@@ -2800,7 +2804,14 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     flex: 0 1 100%;
     height: 230px; }
   .room p {
-    text-align: justify; } }
+    text-align: justify; } 
+  .slider-about__item {
+    height: auto;}
+  .slider-about__item-mob {
+    display: block !important; }
+  .slider-about__item-pc {
+    display: none !important;}
+}
 
 @media (max-width: 414px) {
   .logo-icon {

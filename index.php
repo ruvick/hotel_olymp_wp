@@ -10,7 +10,10 @@
 			$pictIndex = 0;
 			foreach ($pict as $item) {
 				?>
-				<div class="slider-about__item"><img src="<?php echo wp_get_attachment_image_src($item['slider_img'], 'full')[0]; ?>" alt=""></div>
+				<div class="slider-about__item">
+					<img src="<?php echo wp_get_attachment_image_src($item['slider_img'], 'full')[0]; ?>" class="slider-about__item-pc" alt="">
+					<img src="<?php echo wp_get_attachment_image_src($item['slider_img_mob'], 'full')[0]; ?>" class="slider-about__item-mob" alt="">
+				</div>
 				<?
 				$pictIndex++;
 			}
