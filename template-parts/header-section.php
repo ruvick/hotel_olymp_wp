@@ -3,7 +3,7 @@
 
 		<div class="header__row d-flex">
 
-			<a href="index.html" class="header__logo logo-icon"></a>
+			<a href="http://hotel-olymp.ruvick.site" class="header__logo logo-icon"></a>
 
 			<div class="header__nav-block">
 

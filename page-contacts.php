@@ -42,8 +42,8 @@ get_header(); ?>
 					</div>
 					<div class="headen_form_blk">
 						<form action="#" class="contacts__form">
-							<input type="text" name="name" placeholder="Имя" id="form-callback-name" class="contacts__input input">
-							<input type="tel" name="tel" placeholder="Телефон" id="form-callback-tel" class="contacts__input-phone input__phone">
+							<input type="text" name="name" placeholder="Имя" id="form-callback-name" class="contacts__input send-name input">
+							<input type="tel" name="tel" placeholder="Телефон" id="form-callback-tel" class="contacts__input-phone send-phone input__phone">
 							<div class="contacts__form-check check">
 								<input type="checkbox" value="1" name="form[]"> 
 								<p>

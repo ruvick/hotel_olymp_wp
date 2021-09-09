@@ -3,7 +3,7 @@
 				
 				<div class="footer__row d-flex">
 
-					<a href="index.html" class="footer__logo logo-icon"></a>
+					<a href="http://hotel-olymp.ruvick.site" class="footer__logo logo-icon"></a>
 
 					<?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'footer__menu menu__list',
 					'container_class' => 'footer__menu menu__list','container' => false )); ?> 

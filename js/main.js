@@ -392,11 +392,12 @@ $(".popup-quest").on('click', function (e) {
 $('.newButton').click(function (e) {
 
 	e.preventDefault();
-	const name = $("#form-callback-name").val();
-	const tel = $("#form-callback-tel").val();
+	const name = $(".send-name").val(); 
+	const tel = $(".send-phone").val();
+	const email = $(".send-email").val();
 
-	if (jQuery("#form-callback-tel").val() == "") {
-		jQuery("#form-callback-tel").css("border-bottom", "1px solid red"); 
+	if (jQuery(".send-phone").val() == "") {
+		jQuery(".send-phone").css("border-bottom", "1px solid red"); 
 		return;
 	}
 
@@ -413,6 +414,7 @@ $('.newButton').click(function (e) {
 				nonce: allAjax.nonce,
 				name: name,
 				tel: tel,
+				email: email,
 			}
 		);
 

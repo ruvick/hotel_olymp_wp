@@ -1623,7 +1623,8 @@ body.ie .ibg img {
   margin-bottom: 25px; }
 
 .offers {
-  padding: 46px 0 124px 0; }
+  /*padding: 46px 0 124px 0; */
+  padding: 46px 0 10px 0; }
 
 .offers__title {
   color: #161615;
@@ -2224,6 +2225,28 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   margin: 10px 0; }
 /* Popup JS End*/
 
+.form-section {
+  padding: 25px 0 45px 0;
+}
+
+.form-section .offers__title {
+    margin-bottom: 25px;
+}
+
+.form-section p  {
+  color: #161615;
+  margin-bottom: 25px;
+}
+
+.form-section .container {
+  text-align: center;
+}
+
+.form-section__btn {
+  background: #A46A37;
+}
+
+
 @media (max-width: 1700px) {
   .header__container {
     max-width: inherit;
@@ -2582,7 +2605,10 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   .restaurant__img-big {
     height: auto; }
   .restaurant__img {
-    height: auto; } }
+    height: auto; } 
+  .form-section {
+    padding: 15px 0 35px 0;}
+}
 
 @media (max-width: 700px) {
   .mob-menu {
@@ -2791,7 +2817,10 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     flex: 0 1 100%;
     height: 180px; }
   .mob-menu {
-    margin-top: 35px; } }
+    margin-top: 35px; } 
+  .form-section__btn {
+    width: 100%;}
+}
 
 @media (max-width: 320px) {
   .title:before {
