@@ -24,53 +24,53 @@ get_header(); ?>
 
 			<div class="services__row d-flex">
 
-				<div class="services__card-img">
+				<a href = "<? echo pll_get_permalink(48); ?>" class="services__card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
 						Панорамная беседка <br>
 						над водой
 					</h4>
-				</div>		
+				</a>		 
 
-				<div class="services__card-img">
+				<a href = "<? echo pll_get_permalink(52); ?>" class="services__card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
 						Бассейн и <br>
 						SPA комплекс
 					</h4>
-				</div>		
+				</a>		 
 
-				<div class="services__card-img">
+				<a href = "<? echo pll_get_permalink(64); ?>" class="services__card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
 						Дом для Всей <br>
 						семьи
 					</h4>
-				</div>		
+				</a>		 
 
-				<div class="services__card-img">
+				<a href = "<? echo pll_get_permalink(68); ?>" class="services__card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
 						Рыбалка на осетров и <br>
 						ГрильДом
 					</h4>
-				</div>		
+				</a>		 
 
-				<div class="services__card-img">
+				<a href = "<? echo pll_get_permalink(60); ?>" class="services__card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
 						Оборудованные <br>
 						Конференц-залы
 					</h4>
-				</div>		
+				</a>		 
 
-				<div class="services__card-img">
+				<a href = "<? echo pll_get_permalink(68); ?>" class="services__card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
 						Ресторан <br>
 						Банкетный зал
 					</h4>
-				</div>		
+				</a>		 
 
 			</div>
 
