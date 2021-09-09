@@ -125,61 +125,52 @@
 
 			<div class="card-img__row d-flex">
 
-				<a href = "<? echo pll_get_permalink(48); ?>">
-					<div class="offers__card-img card-img">
-						<!-- <div class="card-img__nuar"></div> -->
-						<h4>
-							Панорамная <br>
-							беседка над водой
-						</h4>
-					</div>		
+				<a href = "<? echo pll_get_permalink(48); ?>" class="offers__card-img card-img">
+					<!-- <div class="card-img__nuar"></div> -->
+					<h4>
+						Панорамная <br>
+						беседка над водой
+					</h4>
 				</a>
 				
-				<div class="offers__card-img card-img">
-					<!-- <div class="card-img__nuar"></div> -->
+				<a href = "<? echo pll_get_permalink(52); ?>" class="offers__card-img card-img">
+					<div class="card-img__nuar"></div>
 					<h4>
 						Бассейн и <br>
 						SPA комплекс
 					</h4>
-				</div>		
+				</a>
 
-				<div class="offers__card-img card-img">
-					<!-- <div class="card-img__nuar"></div> -->
-					<h4>
-						Ресторан <br>
-						Банкетный зал
-					</h4>
-				</div>		
-
-				<div class="offers__card-img card-img">
-					<!-- <div class="card-img__nuar"></div> -->
+				<a href = "<? echo pll_get_permalink(60); ?>" class="offers__card-img card-img">
+					<div class="card-img__nuar"></div>
 					<h4>
 						Оборудованные <br>
 						конференц-залы
 					</h4>
-				</div>		
+				</a>
 
-				<div class="offers__card-img card-img">
-					<!-- <div class="card-img__nuar"></div> -->
+				<a href = "<? echo pll_get_permalink(64); ?>" class="offers__card-img card-img">
+					<div class="card-img__nuar"></div>
 					<h4>
 						Дом для <br>
 						всей семьи
 					</h4>
-				</div>		
+				</a>
 
-				<div class="offers__card-img card-img">
-					<!-- <div class="card-img__nuar"></div> -->
+				<a href = "<? echo pll_get_permalink(68); ?>" class="offers__card-img card-img">
+					<div class="card-img__nuar"></div>
 					<h4>
-						Гриль Hous
+						Ресторан <br>
+						Банкетный зал
 					</h4>
-				</div>		
+				</a>
 
-				<div class="offers__card-img card-img">
-					<!-- <div class="card-img__nuar"></div> -->
+				<a href = "<? echo pll_get_permalink(48); ?>" class="offers__card-img card-img">
+					<div class="card-img__nuar"></div>
 					<h4>
-						Рыбалка
+						Гриль Hous и рыбалка
 					</h4>
-				</div>		
+				</a>
 
 			</div>
 
