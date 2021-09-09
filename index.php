@@ -67,6 +67,7 @@
 
 			<div class="card-img__row d-flex">
 
+				
 				<div class="stock__card-img card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
@@ -124,14 +125,16 @@
 
 			<div class="card-img__row d-flex">
 
-				<div class="offers__card-img card-img">
-					<!-- <div class="card-img__nuar"></div> -->
-					<h4>
-						Панорамная <br>
-						беседка над водой
-					</h4>
-				</div>		
-
+				<a href = "<? echo pll_get_permalink(48); ?>">
+					<div class="offers__card-img card-img">
+						<!-- <div class="card-img__nuar"></div> -->
+						<h4>
+							Панорамная <br>
+							беседка над водой
+						</h4>
+					</div>		
+				</a>
+				
 				<div class="offers__card-img card-img">
 					<!-- <div class="card-img__nuar"></div> -->
 					<h4>

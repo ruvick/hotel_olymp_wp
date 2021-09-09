@@ -582,4 +582,10 @@ function get_url_switcher($leng){
 	return $arr[$leng]["url"]; 
 }
 
+function pll_get_permalink($p_id) {
+	$lg = pll_current_language();
+	$tr_id = pll_get_post( $p_id, $lg );
+	return get_permalink($tr_id);
+}
+
 include "translate.php";
