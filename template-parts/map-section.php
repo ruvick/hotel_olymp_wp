@@ -28,7 +28,7 @@
                     // Размеры иконки
                     iconImageSize: [65, 65],
                     // Смещение верхнего угла относительно основания иконки
-                    iconImageOffset: [-25, -100]
+                    iconImageOffset: [-25, -60]
                   });
 
     var clusterer = new ymaps.Clusterer({
