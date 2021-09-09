@@ -7,15 +7,15 @@
 				<div class="contacts-bg__row d-flex">
 					<div class="contacts-bg__col">
 						<h3 class="contacts-bg__title title">Бронирование</h3>
-						<a href="tel:+79009388033" class="contacts-bg__tel">+7 900 938 80 33</a>
+						<? $tel1 = carbon_get_theme_option("as_phone_1"); if (!empty($tel1)){?><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel1); ?>" class="contacts-bg__tel"><? echo $tel1; ?></a><?}?> 
 					</div>
 					<div class="contacts-bg__col">
 						<h3 class="contacts-bg__title title">Ресторан</h3>
-						<a href="tel:+79009388033" class="contacts-bg__tel">+7 900 938 80 33</a>
+						<? $tel2 = carbon_get_theme_option("as_phone_2"); if (!empty($tel2)){?><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel2); ?>" class="contacts-bg__tel"><? echo $tel2; ?></a><?}?> 
 					</div>
 					<div class="contacts-bg__col">
 						<h3 class="contacts-bg__title title">Конференц-зал</h3>
-						<a href="tel:+79009388033" class="contacts-bg__tel">+7 900 938 80 33</a>
+						<? $tel3 = carbon_get_theme_option("as_phone_3"); if (!empty($tel3)){?><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel3); ?>" class="contacts-bg__tel"><? echo $tel3; ?></a><?}?> 
 					</div>
 				</div>
 			</div>

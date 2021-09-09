@@ -34,9 +34,15 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
           ->set_width(50),
         Field::make( 'text', 'as_schedule', __( 'Режим работы' ) )
           ->set_width(50),
-        Field::make( 'text', 'as_phones_1', __( 'Телефон' ) )
+        Field::make( 'text', 'as_phone_1', __( 'Телефон Бронирование' ) )
           ->set_width(50),
-        Field::make( 'text', 'as_phone_2', __( 'Телефон дополнительный' ) )
+        Field::make( 'text', 'as_phone_2', __( 'Телефон Ресторан' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_phone_3', __( 'Телефон Конференц-зал' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_phone_4', __( 'Телефон Дополнительный 1' ) )
+          ->set_width(50),
+        Field::make( 'text', 'as_phone_5', __( 'Телефон Дополнительный 2' ) )
           ->set_width(50),
         Field::make( 'text', 'as_email', __( 'Email' ) )
           ->set_width(50),

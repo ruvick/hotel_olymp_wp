@@ -29,11 +29,11 @@ get_header(); ?>
 						<? $adr = carbon_get_theme_option("as_address"); if (!empty($adr)){?><li><? echo $adr; ?></li><?}?>
 						<li>Широта: 51°39′5.72″N (51.651588)</li>
 						<li>Долгота: 35°35′7.71″E (35.585474)</li>
-						<li><a href="tel:7(47131)21251">+7 (47131) 2-12-51</a></li>
-						<li><a href="tel:7(47131)21255">+7 (47131) 2-12-55</a></li>
+						<? $tel4 = carbon_get_theme_option("as_phone_4"); if (!empty($tel4)){?><li><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel4); ?>"><? echo $tel4; ?></a></li><?}?> 
+						<? $tel5 = carbon_get_theme_option("as_phone_5"); if (!empty($tel5)){?><li><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel5); ?>"><? echo $tel5; ?></a></li><?}?> 
 						<? $mail = carbon_get_theme_option("as_email"); if (!empty($mail)){?><li><a href="mailto:<? echo $mail; ?>"><? echo $mail; ?></a></li><?}?>
 					</ul>
-				</div>
+				</div> 
 
 				<div class="contacts__col">
 					<h2>Заказать обратный звонок</h2>
