@@ -66,8 +66,8 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
           ->set_width(50),
         Field::make( 'text', 'as_insta', __( 'instagram' ) )
           ->set_width(50),
-        Field::make( 'text', 'as_face', __( 'facebook' ) )
-          ->set_width(50),
+        // Field::make( 'text', 'as_face', __( 'facebook' ) )
+        //   ->set_width(50),
         Field::make( 'text', 'as_vk', __( 'Вконтакте' ) )
           ->set_width(50),
         Field::make( 'text', 'as_telegr', __( 'telegram' ) )
