@@ -932,18 +932,15 @@ body.ie .ibg img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: flex-end;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 1070px;
-  flex: 0 1 1070px; }
+  flex: 0 1 100%; }
 
 .header__menu {
-  margin-right: 15px; }
+  margin-right: 55px; }
 
 .menu__list {
   display: flex;
