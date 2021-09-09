@@ -76,6 +76,13 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
     Container::make('post_meta', 'ultra_product_cr', 'Дополнительные поля')
     ->show_on_template(array('page-room.php'))
       ->add_fields(array(   
+        Field::make( 'complex', 'offer_picture', "Галерея товара" )
+      ->add_fields( array(
+        Field::make('image', 'gal_img', 'Изображение' )->set_width(30),
+        Field::make('text', 'gal_img_sku', 'ID для модификации')->set_width(30),
+        Field::make('text', 'gal_img_alt', 'alt и title')->set_width(30)        
+      ) ),
+
       Field::make('textarea', 'offer_smile_descr', 'Краткое описание')->set_width(100),
       // Field::make('text', 'offer_name', 'Название товара')->set_width(30),
       // Field::make('text', 'offer_label', 'Метка на товаре')->set_width(30),
@@ -84,6 +91,11 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
       // Field::make('text', 'offer_siries', 'Серия (для сопутствующих)')->set_width(30),
       // Field::make('text', 'offer_sticker', 'Стикер')->set_width(50), 
       Field::make('text', 'offer_price', 'Стоимость номера')->set_width(50),
+      Field::make('text', 'room_size', 'Площадь номера')->set_width(50),
+      Field::make('text', 'room_number', 'Колличество мест в номере')->set_width(50),
+      Field::make('text', 'room_rooms', 'Колличество комнат в номере')->set_width(50),
+      Field::make('rich_text', 'included_price', 'В стоимость входит')->set_width(100),
+    ));
       // Field::make('text', 'offer_number', 'Колличество')->set_width(50),
       // Field::make('text', 'offer_sku', 'Артикул (Базовый)')->set_width(50),
       // Field::make('text', 'offer_benefit', 'Выгода')->set_width(50),
@@ -112,12 +124,6 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
       //   Field::make('text', 'mod_picture_id', 'Изображения модификации')->set_width(20),
       // ) ),
         
-      Field::make( 'complex', 'offer_picture', "Галерея товара" )
-      ->add_fields( array(
-        Field::make('image', 'gal_img', 'Изображение' )->set_width(30),
-        Field::make('text', 'gal_img_sku', 'ID для модификации')->set_width(30),
-        Field::make('text', 'gal_img_alt', 'alt и title')->set_width(30)        
-      ) ),
 
     //   Field::make('complex', 'complex_analogs', 'Ближайшие аналоги')
     //     ->set_max(4) // Можно будет выбрать только 5 постов
@@ -130,7 +136,7 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
     //       ->set_width(33),
     // ))
 
-  ));
+
 
   // Container::make('post_meta', 'single-galery', 'Характеристики записи')
   // ->show_on_template(array('single-galery.php'))
