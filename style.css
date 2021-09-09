@@ -2253,6 +2253,14 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   background: #A46A37;
 }
 
+.impressions .container {
+  text-align: center;
+}
+
+.impressions__btn {
+  background: #A46A37;
+}
+
 
 @media (max-width: 1700px) {
   .header__container {

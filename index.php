@@ -108,9 +108,7 @@
 				<img src="<?php echo get_template_directory_uri();?>/img/text-block-logo.png" class="text-block__logo" alt="">
 				<img src="<?php echo get_template_directory_uri();?>/img/text-block-logo.png" class="text-block__logo text-block__logo_2" alt="">
 				<h2 class="impressions__title title">Незабываемое торжество в  ресторане «Олимп»</h2>
-				<p>
-					Только самая изысканная кухня, богатый выбор блюд и напитков.
-				</p>
+				<a href="#" class="impressions__btn btn">Подробнее</a>
 			</div>
 
 		</div>
