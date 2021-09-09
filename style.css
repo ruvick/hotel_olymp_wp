@@ -2800,7 +2800,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   .room p {
     text-align: justify; } 
   .slider-about__item {
-    height: auto;}
+    height: 450px;}
   .slider-about__item-mob {
     display: block !important; }
   .slider-about__item-pc {
