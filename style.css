@@ -2273,8 +2273,60 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   margin-bottom: 107px;
 }
 
+.spa-bg {
+  padding: 120px 0 138px 0;
+  background-image: url('img/spa-bg.jpg');
+}
+
+.spa-content {
+  padding-bottom: 25px;
+}
+
+.spa-content h2 {
+  font-size: 36px;
+  line-height: 43.2px;
+  color: #C18B52;
+  margin-bottom: 35px;
+}
+
+.spa__descp {
+  color: #161615;
+  margin-bottom: 35px;
+}
+
+.spa__descp p  {
+  color: #161615;
+  margin-bottom: 20px;
+}
+
+.spa__descp p:last-child  {
+  margin-bottom: 0px;
+}
 
 
+.spa__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 47px;
+}
+
+.spa__item-img {
+  flex: 0 1 32.9%;
+  height: 330px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.spa__item-img_big {
+  flex: 0 1 66.42%;
+}
+
+.spa__item-img img  {
+  width: 100%;
+  height: 100%;
+  object-fit:  cover;
+}
 
 
 @media (max-width: 1700px) {
@@ -2297,7 +2349,10 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   .sample__descp {
     margin-bottom: 35px;}
   .sample__row {
-    margin-bottom: 35px;} }
+    margin-bottom: 35px;} 
+  .spa__row {
+    margin-bottom: 15px;}
+}
 
 @media (max-width: 1300px) {
   .header__nav-block {
@@ -2642,6 +2697,17 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     height: auto; } 
   .applic-section {
     padding: 15px 0 35px 0;}
+  .spa__item-img {
+    height: auto;
+    margin-bottom: 5px;}
+  .spa-content h2 {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 15px;}
+  .spa__descp {
+    margin-bottom: 15px;}
+  .spa__row {
+    margin-bottom: 15px;}
 }
 
 @media (max-width: 700px) {
@@ -2788,6 +2854,12 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     margin-bottom: 10px; } 
   .popup__item img {
     display: none;}
+  .spa__item-img {
+    flex: 0 1 49.5%;}
+  .spa__item-img_big {
+    flex: 0 1 100%;}
+  .spa__descp {
+    text-align: justify;}
 }
 
 @media (max-width: 480px) {
@@ -2866,6 +2938,10 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     margin-top: 35px; } 
   .form-section__btn {
     width: 100%;}
+  .spa__item-img {
+    flex: 0 1 100%;}
+  .spa__item-img {
+    height: 180px;}
 }
 
 @media (max-width: 320px) {
