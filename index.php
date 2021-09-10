@@ -64,44 +64,30 @@
 	<section id="stock" class="stock">
 		<div class="container">
 			<h2>Акции и спецпредложения</h2>
+			<?php $stock = carbon_get_theme_option('stock_complex');
+			if (!empty($stock)) : ?>
+				<?php foreach ($stock as $item) : ?>
+					<?php if (!empty($item['checkbox_stock'])) {
+						echo'<div class="card-img__row d-flex">
+									<div class="stock__card-img card-img" style="background-image: url(' . wp_get_attachment_image_src($item["stock_img_1"], "full")[0] . ');">
+										<div class="card-img__nuar"></div>
+										<h4>' . $item['stock_title_1'] . '</h4>
+									</div>		
 
-			<div class="card-img__row d-flex">
-
-				
-				<div class="stock__card-img card-img">
-					<div class="card-img__nuar"></div>
-					<h4>
-						Романтические <br>
-						выходные в Олимпе
-					</h4>
-				</div>		
-
-				<div class="stock__card-img card-img">
-					<div class="card-img__nuar"></div>
-					<h4>
-						Посещение бассейна <br>
-						при заказе сауны
-					</h4>
-				</div>		
-
-				<div class="stock__card-img card-img">
-					<div class="card-img__nuar"></div>
-					<h4>
-						Незабываемая <br>
-						свадебная церемония
-					</h4>
-				</div>		
-
-				<div class="stock__card-img card-img">
-					<div class="card-img__nuar"></div>
-					<h4>
-						Рыбалка <br>
-						гриль дом 
-					</h4>
-				</div>		
-
-			</div>
-
+									<div class="stock__card-img card-img" style="background-image: url(' . wp_get_attachment_image_src($item["stock_img_2"], "full")[0] . ');">
+										<div class="card-img__nuar"></div>
+										<h4>' . $item['stock_title_2'] . '</h4>
+									</div>		
+								</div>';
+					} else {
+						echo '<div class="card-img card-img__wide" style="background-image: url(' . wp_get_attachment_image_src($item["stock_img"], "full")[0] . ');">
+										<div class="card-img__nuar"></div>
+										<h4>' . $item['stock_title'] . '</h4>
+									</div>';
+					}
+					?>
+				<?php endforeach; ?>
+			<?php endif; ?>
 		</div>
 	</section>
 
@@ -112,7 +98,7 @@
 				<img src="<?php echo get_template_directory_uri();?>/img/text-block-logo.png" class="text-block__logo" alt="">
 				<img src="<?php echo get_template_directory_uri();?>/img/text-block-logo.png" class="text-block__logo text-block__logo_2" alt="">
 				<h2 class="impressions__title title">Незабываемое торжество в  ресторане «Олимп»</h2>
-				<a href="#" class="impressions__btn btn">Подробнее</a>
+				<a href="<?php echo get_permalink(40);?>" class="impressions__btn btn">Подробнее</a>
 			</div>
 
 		</div>

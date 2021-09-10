@@ -1575,6 +1575,10 @@ body.ie .ibg img {
   .card-img h4 {
     z-index: 5; }
 
+.card-img__wide {
+  flex: 0 1 100%;
+}
+
 .stock__card-img:nth-child(1) {
   background-image: url("img/stock/01.jpg"); }
 
