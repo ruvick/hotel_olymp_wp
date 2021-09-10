@@ -2261,6 +2261,21 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   display: none !important;
 }
 
+.content p  {
+  color: #161615;
+}
+
+.sample__descp {
+  margin-bottom: 53px;
+}
+
+.sample__row {
+  margin-bottom: 107px;
+}
+
+
+
+
 
 @media (max-width: 1700px) {
   .header__container {
@@ -2278,7 +2293,11 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   .room {
     padding-bottom: 30px; }
   .restaurant-specific {
-    padding: 35px 0; } }
+    padding: 35px 0; } 
+  .sample__descp {
+    margin-bottom: 35px;}
+  .sample__row {
+    margin-bottom: 35px;} }
 
 @media (max-width: 1300px) {
   .header__nav-block {
