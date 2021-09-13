@@ -26,9 +26,9 @@ get_header(); ?>
 					<h1><? the_title();?></h1>  
 
 					<ul>
-						<? $adr = carbon_get_theme_option("as_address"); if (!empty($adr)){?><li><? echo $adr; ?></li><?}?>
-						<li>Широта: 51°39′5.72″N (51.651588)</li>
-						<li>Долгота: 35°35′7.71″E (35.585474)</li>
+						<? $adr = carbon_get_theme_option(get_feild_translate("as_address")); if (!empty($adr)){?><li><? echo $adr; ?></li><?}?>
+						<li><? echo pll_e("Широта");?>: 51°39′5.72″N (51.651588)</li>
+						<li><? echo pll_e("Долгота");?>: 35°35′7.71″E (35.585474)</li>
 						<? $tel4 = carbon_get_theme_option("as_phone_4"); if (!empty($tel4)){?><li><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel4); ?>"><? echo $tel4; ?></a></li><?}?> 
 						<? $tel5 = carbon_get_theme_option("as_phone_5"); if (!empty($tel5)){?><li><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel5); ?>"><? echo $tel5; ?></a></li><?}?> 
 						<? $mail = carbon_get_theme_option("as_email"); if (!empty($mail)){?><li><a href="mailto:<? echo $mail; ?>"><? echo $mail; ?></a></li><?}?>
@@ -36,19 +36,18 @@ get_header(); ?>
 				</div> 
 
 				<div class="contacts__col">
-					<h2>Заказать обратный звонок</h2>
+					<h2><? echo pll_e("Заказать обратный звонок");?></h2>
 					<div class="SendetMsg" style="display:none;">
-						Ваше сообщение успешно отправлено.
+					<? echo pll_e("Ваше сообщение успешно отправлено.");?>
 					</div>
 					<div class="headen_form_blk">
 						<form action="#" class="contacts__form">
-							<input type="text" name="name" placeholder="Имя" id="form-callback-name" class="contacts__input send-name input">
-							<input type="tel" name="tel" placeholder="Телефон" id="form-callback-tel" class="contacts__input-phone send-phone input__phone">
+							<input type="text" name="name" placeholder="<? echo pll_e("Имя");?>" id="form-callback-name" class="contacts__input send-name input">
+							<input type="tel" name="tel" placeholder="<? echo pll_e("Телефон");?>" id="form-callback-tel" class="contacts__input-phone send-phone input__phone">
 							<div class="contacts__form-check check">
 								<input type="checkbox" value="1" name="form[]"> 
 								<p>
-									Я даю согласие с политикой конфиденциальности <br>
-									и обработки персональных данных
+								<? echo pll_e("Я даю согласие с политикой конфиденциальности <br>и обработки персональных данных");?>
 								</p>
 							</div>
 							<button class="contacts__btn callbackBtn btn">Отправить</button>

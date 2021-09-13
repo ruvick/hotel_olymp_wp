@@ -84,6 +84,8 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
           ->set_width(50),
         Field::make( 'text', 'as_address', __( 'Адрес' ) )
           ->set_width(50),
+        Field::make( 'text', 'as_address_en', __( 'Адрес (Eng)' ) )
+          ->set_width(50),
         Field::make( 'text', 'as_bik', __( 'БИК' ) )
           ->set_width(50),
         Field::make( 'text', 'as_rs', __( 'Р/С' ) )
@@ -156,6 +158,14 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
         Field::make('image', 'sauna_img_1', 'Картинка 1' )->set_width(20),
         Field::make('image', 'sauna_img_2', 'Картинка 2' )->set_width(20),
         Field::make('image', 'sauna_img_3', 'Картинка 3' )->set_width(20),
+    ));
+
+    Container::make('post_meta', 'page-restorant', 'Поля для ресторана')
+    ->show_on_template(array('page-restaurant.php'))
+      ->add_fields(array(   
+        Field::make('text', 'rest_head', 'Заголовок' )->set_width(100),
+        Field::make('rich_text', 'rest_subtext', 'Текст про ресторан' )->set_width(100),
+        Field::make('file', 'rest_menu', 'Меню ресторана' )->set_width(20),
     ));
 
 ?>

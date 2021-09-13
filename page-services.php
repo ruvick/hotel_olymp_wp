@@ -27,48 +27,42 @@ get_header(); ?>
 				<a href = "<? echo pll_get_permalink(48); ?>" class="services__card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
-						Панорамная беседка <br>
-						над водой
+					<? echo pll_e("Панорамная <br/>беседка над водой");?>
 					</h4>
 				</a>		 
 
 				<a href = "<? echo pll_get_permalink(52); ?>" class="services__card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
-						Бассейн и <br>
-						SPA комплекс
+					<? echo pll_e("Бассейн и <br/>SPA комплекс");?>
 					</h4>
 				</a>		 
 
 				<a href = "<? echo pll_get_permalink(64); ?>" class="services__card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
-						Дом для Всей <br>
-						семьи
+					<? echo pll_e("Дом для <br/>всей семьи");?>
 					</h4>
 				</a>		 
 
 				<a href = "<? echo pll_get_permalink(68); ?>" class="services__card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
-						Рыбалка на осетров и <br>
-						ГрильДом
+					<? echo pll_e("Гриль Hous и <br/>рыбалка");?>
 					</h4>
 				</a>		 
 
 				<a href = "<? echo pll_get_permalink(60); ?>" class="services__card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
-						Оборудованные <br>
-						Конференц-залы
+					<? echo pll_e("Оборудованные <br/>конференц-залы");?>
 					</h4>
 				</a>		 
 
 				<a href = "<? echo pll_get_permalink(40); ?>" class="services__card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
-						Ресторан <br>
-						Банкетный зал 
+					<? echo pll_e("Ресторан <br/>Банкетный зал");?>
 					</h4>
 				</a>		 
 

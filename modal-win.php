@@ -8,17 +8,17 @@
 			<div class="popup__item d-flex">
 				<img src="<?php echo get_template_directory_uri(); ?>/img/popup-img.jpg" alt="">
 				<div class="popup__form-block">
-					<h2>Заявка на обратный звонок</h2>
+					<h2><? echo pll_e("Заявка на обратный звонок");?></h2>
 					<div class="SendetMsg" style="display:none;"> 
-						Ваше сообщение успешно отправлено.
+					<? echo pll_e("Ваше сообщение успешно отправлено.");?>
 					</div>
 					<div class="headen_form_blk">
-						<p>Оставьте заявку и мы свяжемся с вами в течении 15 минут</p> 
+						<p><? echo pll_e("Оставьте заявку и мы свяжемся с Вами в течении 15 минут");?></p> 
 						<form action="#" class="popup__form">
-							<input type="text" name="name" placeholder="Имя" id="form-reserv-name" class="popup__form-input input">
-							<input type="tel" name="tel" placeholder="Телефон*" id="form-reserv-tel" class="popup__form-input input">
+							<input type="text" name="name" placeholder="<? echo pll_e("Имя");?>" id="form-reserv-name" class="popup__form-input input">
+							<input type="tel" name="tel" placeholder="<? echo pll_e("Телефон");?>*" id="form-reserv-tel" class="popup__form-input input">
 							<input type="text" name="email" placeholder="Email" id="form-reserv-email" class="popup__form-input input">
-							<p>Заполняя данную форму вы соглашаетесь с <a href="<?php echo get_permalink(452); ?>">политикой конфиденциальности</a></p>
+							<p><? echo pll_e("Заполняя данную форму вы соглашаетесь с");?> <a href="<?php echo get_permalink(452); ?>"><? echo pll_e("политикой конфиденциальности");?></a></p>
 							<button class="popup__form-btn reservBtn btn"><? echo pll_e("Отправить заявку") ?></button>
 						</form>
 					</div>

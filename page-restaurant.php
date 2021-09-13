@@ -14,13 +14,11 @@ get_header(); ?>
 			<section id="restaurant" class="restaurant stock-bg">
 				<div class="container">
 					<div class="restaurant__text-block text-block">
-						<h1 class="greetings__title title">Ресторан Олимп</h1>
-						<p>
-							Ресторан предлагает приятный интерьер,богатый выбор блюд и напитков. 
-							Служба банкетов отеля "Олимп" по заказу сможет организовать 
-							незабываемый праздник, юбилей или вечеринку.
-						</p>
-						<a href="#" class="restaurant__btn btn">Меню ресторана</a>
+						<h1 class="greetings__title title"><?echo carbon_get_the_post_meta("rest_head");?></h1>
+						
+						<?echo  apply_filters( 'the_content', carbon_get_the_post_meta("rest_subtext"));?>
+
+						<a target = "_blank" href="<?echo wp_get_attachment_url(carbon_get_the_post_meta("rest_menu"));?>" class="restaurant__btn btn"><? echo pll_e("Меню ресторана") ?></a>
 					</div>
 				</div>
 			</section>
@@ -30,18 +28,15 @@ get_header(); ?>
 
 					<div class="restaurant-specific__row specific__row d-flex">
 						<div class="specific-item restaurant__specific-item-icon_01 d-flex">
-							75 посадочных <br>
-							мест
+						<? echo pll_e("Банкет до 80 <br/>человек") ?>
 						</div>
 
 						<div class="specific-item restaurant__specific-item-icon_02 d-flex">
-							Современный <br>
-							интерьер
+						<? echo pll_e("Музыкальное и световое <br/>оборудование") ?>
 						</div>
 
 						<div class="specific-item restaurant__specific-item-icon_03 d-flex">
-							Уникальное <br>
-							меню
+						<? echo pll_e("Каминный <br/>зал") ?>
 						</div>
 					</div>
 
@@ -67,6 +62,8 @@ get_header(); ?>
 
 				</div>
 			</section>
+
+	<?php get_template_part('template-parts/applic-section');?>
 
 	<?php get_template_part('template-parts/contacts-section');?>
 
