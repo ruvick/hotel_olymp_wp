@@ -8,5 +8,5 @@
 		<h4><? the_title();?></h4>
 		<p class="prod-card__price"><?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?> руб.</p>
 	</div>
-	<a href="<?echo get_the_permalink(get_the_ID());?>" class="prod-card__btn btn">Подробнее</a>
+	<a href="<?echo get_the_permalink(get_the_ID());?>" class="prod-card__btn btn"><? echo pll_e("Подробнее") ?></a>
 </div>

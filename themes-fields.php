@@ -18,7 +18,10 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
       // Field::make( 'image', 'as_logo_white', 'Логотип в подвале')
       //   ->set_width(30),
       Field::make('text', 'about_home_title', 'Заголовок на главной'),
-      Field::make('rich_text', 'about_home', 'О нашей компании')
+      Field::make('rich_text', 'about_home', 'О нашей компании'),
+
+      Field::make('text', 'about_home_title_en', 'Заголовок на главной (Eng)'),
+      Field::make('rich_text', 'about_home_en', 'О нашей компании (Eng)')
     ))
   ->add_tab('Слайдер', array(
     Field::make('complex', 'slider_index', 'Слайдер на главной')
@@ -33,19 +36,25 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
       Field::make('complex', 'stock_complex', 'Вывод акций на главной')
       ->add_fields(array(
         Field::make('image', 'stock_img', 'Картинка')
-          ->set_width(50),
+          ->set_width(30),
         Field::make('text', 'stock_title', 'Заголовок')
-          ->set_width(50),
+          ->set_width(30),
+        Field::make('text', 'stock_title_en', 'Заголовок (Eng)')
+          ->set_width(30),
         Field::make("checkbox", "checkbox_stock", "Выводить две акции"),
         // ->help_text('Меняет местами картинку и текст"'),
         Field::make('image', 'stock_img_1', 'Картинка 1')
-          ->set_width(50),
+          ->set_width(30),
         Field::make('text', 'stock_title_1', 'Заголовок 1')
-          ->set_width(50),
+          ->set_width(30),
+        Field::make('text', 'stock_title_1_en', 'Заголовок 1  (Eng)')
+          ->set_width(30),
         Field::make('image', 'stock_img_2', 'Картинка 2')
-          ->set_width(50),
+          ->set_width(30),
         Field::make('text', 'stock_title_2', 'Заголовок 2')
-          ->set_width(50),
+          ->set_width(30),
+        Field::make('text', 'stock_title_2_en', 'Заголовок 2  (Eng)')
+          ->set_width(30),
       ))
   ))
     ->add_tab('Контакты', array(

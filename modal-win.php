@@ -19,7 +19,7 @@
 							<input type="tel" name="tel" placeholder="Телефон*" id="form-reserv-tel" class="popup__form-input input">
 							<input type="text" name="email" placeholder="Email" id="form-reserv-email" class="popup__form-input input">
 							<p>Заполняя данную форму вы соглашаетесь с <a href="<?php echo get_permalink(452); ?>">политикой конфиденциальности</a></p>
-							<button class="popup__form-btn reservBtn btn">Отправить заявку</button>
+							<button class="popup__form-btn reservBtn btn"><? echo pll_e("Отправить заявку") ?></button>
 						</form>
 					</div>
 				</div>

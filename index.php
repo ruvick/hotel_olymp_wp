@@ -26,8 +26,8 @@
 
 			<div class="greetings__text-block text-block">
 				<img src="<?php echo get_template_directory_uri();?>/img/text-block-logo.png" class="text-block__logo" alt="">
-				<h1 class="greetings__title title"><?php echo carbon_get_theme_option('about_home_title'); ?></h1>
-				<p><?php echo carbon_get_theme_option('about_home'); ?></p>
+				<h1 class="greetings__title title"><?php echo carbon_get_theme_option(get_feild_translate('about_home_title')); ?></h1>
+				<p><?php echo carbon_get_theme_option(get_feild_translate('about_home')); ?></p>
 			</div>
 
 			<div class="greetings__icon-block d-flex">
@@ -63,7 +63,7 @@
 
 	<section id="stock" class="stock">
 		<div class="container">
-			<h2>Акции и спецпредложения</h2>
+			<h2><? echo pll_e("Акции и спецпредложения") ?></h2>
 			<?php $stock = carbon_get_theme_option('stock_complex');
 			if (!empty($stock)) : ?>
 				<?php foreach ($stock as $item) : ?>
@@ -71,18 +71,18 @@
 						echo'<div class="card-img__row d-flex">
 									<div class="stock__card-img card-img" style="background-image: url(' . wp_get_attachment_image_src($item["stock_img_1"], "full")[0] . ');">
 										<div class="card-img__nuar"></div>
-										<h4>' . $item['stock_title_1'] . '</h4>
+										<h4>' . $item[get_feild_translate('stock_title_1')] . '</h4>
 									</div>		
 
 									<div class="stock__card-img card-img" style="background-image: url(' . wp_get_attachment_image_src($item["stock_img_2"], "full")[0] . ');">
 										<div class="card-img__nuar"></div>
-										<h4>' . $item['stock_title_2'] . '</h4>
+										<h4>' . $item[get_feild_translate('stock_title_2')] . '</h4>
 									</div>		
 								</div>';
 					} else {
 						echo '<div class="card-img card-img__wide" style="background-image: url(' . wp_get_attachment_image_src($item["stock_img"], "full")[0] . ');">
 										<div class="card-img__nuar"></div>
-										<h4>' . $item['stock_title'] . '</h4>
+										<h4>' . $item[get_feild_translate('stock_title')] . '</h4>
 									</div>';
 					}
 					?>
@@ -97,8 +97,8 @@
 			<div class="impressions__text-block text-block">
 				<img src="<?php echo get_template_directory_uri();?>/img/text-block-logo.png" class="text-block__logo" alt="">
 				<img src="<?php echo get_template_directory_uri();?>/img/text-block-logo.png" class="text-block__logo text-block__logo_2" alt="">
-				<h2 class="impressions__title title">Незабываемое торжество в  ресторане «Олимп»</h2>
-				<a href="<?php echo get_permalink(40);?>" class="impressions__btn btn">Подробнее</a>
+				<h2 class="impressions__title title"><? echo pll_e("Незабываемое торжество в ресторане «Олимп»") ?></h2>
+				<a href="<?php echo get_permalink(40);?>" class="impressions__btn btn"><? echo pll_e("Подробнее") ?></a>
 			</div>
 
 		</div>
@@ -107,7 +107,7 @@
 	<section id="offers" class="offers">
 		<div class="container">
 
-			<h2 class="offers__title title">Предложения для наших клиентов</h2>
+			<h2 class="offers__title title"><? echo pll_e("Предложения для наших клиентов") ?></h2>
 
 			<div class="card-img__row d-flex">
 

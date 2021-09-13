@@ -14,15 +14,22 @@
 					</nav>
 				</div> 
 
-				<a href="#reserv" class="header__btn _popup-link btn">Забронировать</a>
+				<a href="#reserv" class="header__btn _popup-link btn"><? echo pll_e("Забронировать") ?></a>
 
 				<div class="header__lang-switch d-flex">
-					<a href = "<? echo get_url_switcher("ru");?>" class="header__lang-switch-ru">Ru</a>
+					<a href = "<? echo get_url_switcher("ru");?>" class="header__lang-switch-ru <? echo !empty(get_current_switcher("ru"))?"header__lang-switch_current":""?>">Ru</a>
 					<span class="header__lang-switch-delimiter">/</span>
-					<a href = "<? echo get_url_switcher("en");?>" class="header__lang-switch-en">En</a>
+					<a href = "<? echo get_url_switcher("en");?>" class="header__lang-switch-en <? echo !empty(get_current_switcher("en"))?"header__lang-switch_current":""?>">En</a>
 				</div>
 
-				
+				<?
+				// $arr = pll_the_languages( array(
+				// 	"raw" => 1
+				// ) );
+				// echo "<pre>";
+				// print_r($arr);
+				// echo "</pre>";
+				?>
 
 
 				<div class="menu__icon icon-menu">

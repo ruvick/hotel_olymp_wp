@@ -606,8 +606,24 @@ function get_url_switcher($leng){
 	$arr = pll_the_languages( array(
 		"raw" => 1
 	) );
-
 	return $arr[$leng]["url"]; 
+}
+
+// Получение метки текущего языка
+function get_current_switcher($leng){
+	$arr = pll_the_languages( array(
+		"raw" => 1
+	) );
+	return $arr[$leng]["current_lang"]; 
+}
+
+// Получение переведенного carbon поля
+function get_feild_translate($feild){
+	$lg = pll_current_language();
+	if ($lg === "en")
+		return $feild."_".$lg;
+	else 
+		return $feild;
 }
 
 function pll_get_permalink($p_id) {

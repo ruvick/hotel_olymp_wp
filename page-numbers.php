@@ -44,7 +44,7 @@ get_header(); ?>
 								</h3>
 								<p class="card-action__paragrafy"><?echo carbon_get_post_meta(get_the_ID(),"offer_smile_descr"); ?></p>
 								<p class="card-action__price"><?echo carbon_get_post_meta(get_the_ID(),"offer_price"); ?><span>руб/сутки</span></p>
-								<a href="<?php the_permalink(); ?>" class="card-action__btn btn">Подробнее</a> 
+								<a href="<?php the_permalink(); ?>" class="card-action__btn btn"><? echo pll_e("Подробнее") ?></a> 
 							</div>
 						</div>
 						<?php

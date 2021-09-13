@@ -8,7 +8,7 @@
     "clear_r": "ssh rudikov-web@rudikov-web.myjino.ru \"rm domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/*.*\"",
     "send_r": "scp -C *.php *.png *.css rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/",
     "send_ms": "scp -C *.css rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/",
-    "send_one": "scp -C page-calculator.php rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/",
+    "send_one": "scp -C page-numbers.php rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/",
     "send_one1": "scp -C themes-fields.php rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/",
     "send_one2": "scp -C translate.php rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/",
     "send_head": "scp -C header.php rudikov-web@rudikov-web.myjino.ru:domains/hotel-olymp.ruvick.site/wp-content/themes/hotel/",

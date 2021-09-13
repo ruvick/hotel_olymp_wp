@@ -898,7 +898,7 @@ body.ie .ibg img {
 
 .header {
   position: fixed;
-  z-index: 5000;
+  z-index: 6000;
   width: 100%;
   padding: 13.5px 0;
   background: #C18B52; }
@@ -1411,7 +1411,7 @@ body.ie .ibg img {
   position: absolute;
   top: 30%;
   right: 2%;
-  z-index: 50000;
+  z-index: 5000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1509,7 +1509,9 @@ body.ie .ibg img {
   align-items: center; }
 
 .advant__item h5 {
-  color: #161615; }
+  color: #161615; 
+  text-align: center;
+}
 
 .advant__item:before {
   content: "";
@@ -2328,6 +2330,13 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   object-fit:  cover;
 }
 
+.header__lang-switch-ru  {
+  color:#A46A37;
+}
+
+.header__lang-switch_current {
+  color:white;
+}
 
 @media (max-width: 1700px) {
   .header__container {
@@ -2499,6 +2508,9 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     -ms-flex: 0 0 50px;
     flex: 0 0 50px;
     margin-right: 25px; }
+
+
+
   .header__lang-switch button {
     font-size: 14px;
     line-height: 1; }
