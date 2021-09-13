@@ -97,7 +97,7 @@
 			<div class="impressions__text-block text-block">
 				<img src="<?php echo get_template_directory_uri();?>/img/text-block-logo.png" class="text-block__logo" alt="">
 				<img src="<?php echo get_template_directory_uri();?>/img/text-block-logo.png" class="text-block__logo text-block__logo_2" alt="">
-				<h2 class="impressions__title title"><? echo pll_e("Незабываемое торжество в ресторане «Олимп»") ?></h2>
+				<h2 class="impressions__title title"><? echo pll_e("Незабываемое торжество в Ресторане «Олимп»") ?></h2>
 				<a href="<?php echo get_permalink(40);?>" class="impressions__btn btn"><? echo pll_e("Подробнее") ?></a>
 			</div>
 
@@ -114,47 +114,42 @@
 				<a href = "<? echo pll_get_permalink(48); ?>" class="offers__card-img card-img">
 					<!-- <div class="card-img__nuar"></div> -->
 					<h4>
-						Панорамная <br>
-						беседка над водой
+					<? echo pll_e("Панорамная <br/>беседка над водой");?>
 					</h4>
 				</a>
 				
 				<a href = "<? echo pll_get_permalink(52); ?>" class="offers__card-img card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
-						Бассейн и <br>
-						SPA комплекс
+					<? echo pll_e("Бассейн и <br/>SPA комплекс");?>
 					</h4>
 				</a>
 
 				<a href = "<? echo pll_get_permalink(60); ?>" class="offers__card-img card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
-						Оборудованные <br>
-						конференц-залы
+					<? echo pll_e("Оборудованные <br/>конференц-залы");?>
 					</h4>
 				</a>
 
 				<a href = "<? echo pll_get_permalink(64); ?>" class="offers__card-img card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
-						Дом для <br>
-						всей семьи
+					<? echo pll_e("Дом для <br/>всей семьи");?>
 					</h4>
 				</a>
 
 				<a href = "<? echo pll_get_permalink(68); ?>" class="offers__card-img card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
-						Ресторан <br>
-						Банкетный зал
+					<? echo pll_e("Ресторан <br/>Банкетный зал");?>
 					</h4>
 				</a>
 
 				<a href = "<? echo pll_get_permalink(68); ?>" class="offers__card-img card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
-						Гриль Hous и <br> рыбалка
+					<? echo pll_e("Гриль Hous и <br/>рыбалка");?>
 					</h4>
 				</a>
 
