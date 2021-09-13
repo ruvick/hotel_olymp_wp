@@ -6,6 +6,8 @@ pll_register_string( "usl_fr", "Дом для <br/>всей семьи", "Усл
 pll_register_string( "usl_fr", "Ресторан <br/>Банкетный зал", "Услуги");
 pll_register_string( "usl_fr", "Гриль Hous и <br/>рыбалка", "Услуги");
 
+pll_register_string( "ob_fr", "В стоимость входит", "Общие фразы");
+pll_register_string( "ob_fr", "руб/сутки", "Общие фразы");
 pll_register_string( "ob_fr", "Незабываемое торжество в Ресторане «Олимп»", "Общие фразы");
 pll_register_string( "ob_fr", "Предложения для наших клиентов", "Общие фразы");
 pll_register_string( "ob_fr", "Конференц-зал", "Общие фразы");

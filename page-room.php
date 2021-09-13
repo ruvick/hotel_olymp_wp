@@ -57,7 +57,7 @@ get_header(); ?>
 
 			<?php the_content(); ?>
 
-			<h2>В стоимость входит</h2>
+			<h2><? echo pll_e("В стоимость входит");?></h2>
 
 			<? echo carbon_get_post_meta(get_the_ID(),"included_price"); ?>
 
