@@ -51,7 +51,7 @@ get_header(); ?>
 									и обработки персональных данных
 								</p>
 							</div>
-							<button class="contacts__btn newButton btn">Отправить</button>
+							<button class="contacts__btn callbackBtn btn">Отправить</button>
 						</form>
 					</div>
 				</div>

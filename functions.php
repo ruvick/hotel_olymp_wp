@@ -5,7 +5,7 @@ define("MAIL_RESEND", "noreply@ultrakresla.ru");
 
 //----Подключене carbon fields
 //----Инструкции по подключению полей см. в комментариях themes-fields.php
-include "carbon-fields/carbon-fields-plugin.php";
+include "carbon-fields/carbon-fields-plugin.php"; 
 
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
@@ -377,6 +377,32 @@ function aj_fnc()
 
 
 // Отправка формы из модального окна
+add_action('wp_ajax_sendreserv', 'sendreserv');
+add_action('wp_ajax_nopriv_sendreserv', 'sendreserv');
+
+function sendreserv()
+{
+	if (empty($_REQUEST['nonce'])) {
+		wp_die('0');
+	}
+
+	if (check_ajax_referer('NEHERTUTLAZIT', 'nonce', false)) {
+
+		$headers = array(
+			'From: Сайт ' . COMPANY_NAME . ' <' . MAIL_RESEND . '>',
+			'content-type: text/html',
+		);
+
+		add_filter('wp_mail_content_type', create_function('', 'return "text/html";'));
+		if (wp_mail(carbon_get_theme_option('as_email_send'), 'Заявка с окна "Забронировать"', '<strong>Имя:</strong> ' . $_REQUEST["name"] . ' <br/> <strong>Телефон:</strong> ' . $_REQUEST["tel"] . ' <br/> <strong>Email:</strong> ' . $_REQUEST["email"], $headers))
+			wp_die("<span style = 'color:green;'>Мы свяжемся с Вами в ближайшее время.</span>");
+		else wp_die("<span style = 'color:red;'>Сервис недоступен попробуйте позднее.</span>");
+	} else {
+		wp_die('НО-НО-НО!', '', 403);
+	}
+}
+
+
 add_action('wp_ajax_sendphone', 'sendphone');
 add_action('wp_ajax_nopriv_sendphone', 'sendphone');
 
@@ -394,7 +420,7 @@ function sendphone()
 		);
 
 		add_filter('wp_mail_content_type', create_function('', 'return "text/html";'));
-		if (wp_mail(carbon_get_theme_option('as_email_send'), 'Заказ звонка', '<strong>Имя:</strong> ' . $_REQUEST["name"] . ' <br/> <strong>Телефон:</strong> ' . $_REQUEST["tel"] . ' <br/> <strong>Email:</strong> ' . $_REQUEST["email"], $headers))
+		if (wp_mail(carbon_get_theme_option('as_email_send'), 'Заказ обратного звонка', '<strong>Имя:</strong> ' . $_REQUEST["name"] . ' <br/> <strong>Телефон:</strong> ' . $_REQUEST["tel"], $headers))
 			wp_die("<span style = 'color:green;'>Мы свяжемся с Вами в ближайшее время.</span>");
 		else wp_die("<span style = 'color:red;'>Сервис недоступен попробуйте позднее.</span>");
 	} else {

@@ -898,7 +898,7 @@ body.ie .ibg img {
 
 .header {
   position: fixed;
-  z-index: 500000;
+  z-index: 5000;
   width: 100%;
   padding: 13.5px 0;
   background: #C18B52; }
@@ -1049,7 +1049,7 @@ body.ie .ibg img {
 
 .mob-menu {
   position: fixed;
-  z-index: 50000;
+  z-index: 500;
   background: #fff;
   top: 0;
   width: 50%;
@@ -2090,7 +2090,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 /* Popup JS */
 .popup {
   -webkit-overflow-scrolling: touch;
-  z-index: 500000; 
+  z-index: 50000; 
   padding: 30px 10px;
   position: fixed;
   top: 0px;

@@ -379,28 +379,59 @@ $('.slider-room').slick({
 	});
 
 
-// Открытие модального окна
-$(".popup-quest").on('click', function (e) {
+//Валидация + Отправщик
+$('.reservBtn').click(function (e) {
+
 	e.preventDefault();
-	jQuery(".windows_form h2").html(jQuery(this).data("winheader"));
-	jQuery(".windows_form .subtitle").html(jQuery(this).data("winsubheader"));
-	jQuery("#question").arcticmodal();
+	const name = $("#form-reserv-name").val();
+	const tel = $("#form-reserv-tel").val();
+	const email = $("#form-reserv-email").val();
+
+	if (jQuery("#form-reserv-tel").val() == "") {
+		jQuery("#form-reserv-tel").css("border", "1px solid red");
+		return;
+	}
+	// if (jQuery("#sig-inp-e").val() == ""){
+	// 	jQuery("#sig-inp-e").css("border","1px solid red");
+	// 	return;
+	// }
+
+	else {
+		var jqXHR = jQuery.post(
+			allAjax.ajaxurl,
+			{
+				action: 'sendreserv',
+				nonce: allAjax.nonce,
+				name: name,
+				tel: tel,
+				email: email,
+			}
+		);
+
+		jqXHR.done(function (responce) {
+			jQuery(".popup__form-block .headen_form_blk").hide();
+			jQuery('.popup__form-block .SendetMsg').show();
+		});
+
+		jqXHR.fail(function (responce) {
+			alert("Произошла ошибка. Попробуйте позднее.");
+		});
+
+	}
 });
 
 
-//Валидация + Отправщик
-$('.newButton').click(function (e) {
+
+$('.callbackBtn').click(function (e) {
 
 	e.preventDefault();
-	const name = $(".send-name").val(); 
-	const tel = $(".send-phone").val();
-	const email = $(".send-email").val();
+	const name = $("#form-callback-name").val();
+	const tel = $("#form-callback-tel").val();
 
-	if (jQuery(".send-phone").val() == "") {
-		jQuery(".send-phone").css("border-bottom", "1px solid red"); 
+	if (jQuery("#form-callback-tel").val() == "") {
+		jQuery("#form-callback-tel").css("border-bottom", "1px solid red");
 		return;
 	}
-
 	// if (jQuery("#sig-inp-e").val() == ""){
 	// 	jQuery("#sig-inp-e").css("border","1px solid red");
 	// 	return;
@@ -414,13 +445,12 @@ $('.newButton').click(function (e) {
 				nonce: allAjax.nonce,
 				name: name,
 				tel: tel,
-				email: email,
 			}
 		);
 
 		jqXHR.done(function (responce) {
-			jQuery(".headen_form_blk").hide();
-			jQuery('.SendetMsg').show();
+			jQuery(".contacts__col .headen_form_blk").hide();
+			jQuery('.contacts__col .SendetMsg').show();
 		});
 
 		jqXHR.fail(function (responce) {
@@ -429,4 +459,3 @@ $('.newButton').click(function (e) {
 
 	}
 });
-
