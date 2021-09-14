@@ -29,10 +29,10 @@ get_header(); ?>
 			}
 			?> 
 
-			<h1>Бассейн на 18,5 м</h1>
+			<h1><? echo pll_e("Бассейн на") ?> 18,5 м</h1>
 
 			<div class="spa__descp">
-				<?echo carbon_get_post_meta(get_the_ID(),"pool_descr"); ?>
+				<?echo apply_filters( 'the_content', carbon_get_post_meta(get_the_ID(),"pool_descr")); ?>
 			</div>
 
 			<div class="spa__row">
@@ -53,10 +53,10 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<h2>Хамам</h2>
+			<h2><? echo pll_e("Хамам") ?></h2>
 
 			<div class="spa__descp">
-				<?echo carbon_get_post_meta(get_the_ID(),"hamam_descr"); ?>
+				<?echo apply_filters( 'the_content', carbon_get_post_meta(get_the_ID(),"hamam_descr")); ?>
 			</div>
 
 			<div class="spa__row">
@@ -71,10 +71,10 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<h2>Сауна</h2>
+			<h2><? echo pll_e("Сауна") ?></h2>
 
 			<div class="spa__descp">
-				<?echo carbon_get_post_meta(get_the_ID(),"sauna_descr"); ?>
+				<?echo apply_filters( 'the_content', carbon_get_post_meta(get_the_ID(),"sauna_descr")); ?>
 			</div>
 
 			<div class="spa__row">

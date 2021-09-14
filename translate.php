@@ -1,4 +1,8 @@
 <?
+pll_register_string( "spa1", "Хамам", "SPA");
+pll_register_string( "spa1", "Сауна", "SPA");
+pll_register_string( "spa1", "Бассейн на", "SPA");
+
 pll_register_string( "rest", "Банкет до 80 <br/>человек", "Ресторан");
 pll_register_string( "rest", "Музыкальное и световое <br/>оборудование", "Ресторан");
 pll_register_string( "rest", "Каминный <br/>зал", "Ресторан");
