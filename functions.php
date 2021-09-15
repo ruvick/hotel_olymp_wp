@@ -393,8 +393,12 @@ function sendreserv()
 			'content-type: text/html',
 		);
 
+		// $mailbody = "<strong>Отправлено с:</strong> <a href = '".$_REQUEST["purl"] ."'>".$_REQUEST["ptitle"] ."</a>";
+
+		$mailbody = "<strong>Отправлено с: </strong>".$_REQUEST["ptitle"]."<br/>";
+		$mailbody .= "<strong>Страница: </strong>".$_REQUEST["purl"];
 		add_filter('wp_mail_content_type', create_function('', 'return "text/html";'));
-		if (wp_mail(carbon_get_theme_option('as_email_send'), 'Заявка с окна "Забронировать"', '<strong>Имя:</strong> ' . $_REQUEST["name"] . ' <br/> <strong>Телефон:</strong> ' . $_REQUEST["tel"] . ' <br/> <strong>Email:</strong> ' . $_REQUEST["email"], $headers))
+		if (wp_mail(carbon_get_theme_option('as_email_send'), 'Заявка с окна "Забронировать"', '<strong>Имя:</strong> ' . $_REQUEST["name"] . ' <br/> <strong>Телефон:</strong> ' . $_REQUEST["tel"] . ' <br/> <strong>Email:</strong> ' . $_REQUEST["email"] ." <br/>". $mailbody, $headers))
 			wp_die("<span style = 'color:green;'>Мы свяжемся с Вами в ближайшее время.</span>");
 		else wp_die("<span style = 'color:red;'>Сервис недоступен попробуйте позднее.</span>");
 	} else {

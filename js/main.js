@@ -386,6 +386,9 @@ $('.reservBtn').click(function (e) {
 	const name = $("#form-reserv-name").val();
 	const tel = $("#form-reserv-tel").val();
 	const email = $("#form-reserv-email").val();
+	const pageTitle = document.title;
+	const pageUrl = window.location.href;
+
 
 	if (jQuery("#form-reserv-tel").val() == "") {
 		jQuery("#form-reserv-tel").css("border", "1px solid red");
@@ -405,6 +408,8 @@ $('.reservBtn').click(function (e) {
 				name: name,
 				tel: tel,
 				email: email,
+				ptitle:pageTitle,
+				purl:pageUrl,
 			}
 		);
 
