@@ -2363,6 +2363,15 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     margin-bottom: 35px;} 
   .spa__row {
     margin-bottom: 15px;}
+    .slider-about__item {
+      height: 650px;
+    }
+}
+
+@media (max-width: 1360px) {
+  .slider-about__item {
+    height: 570px;
+  }
 }
 
 @media (max-width: 1300px) {
