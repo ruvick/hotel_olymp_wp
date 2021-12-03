@@ -18,6 +18,7 @@ pll_register_string( "usl_fr", "Оборудованные <br/>конферен
 pll_register_string( "usl_fr", "Дом для <br/>всей семьи", "Услуги");
 pll_register_string( "usl_fr", "Ресторан <br/>Банкетный зал", "Услуги");
 pll_register_string( "usl_fr", "Гриль Hous и <br/>рыбалка", "Услуги");
+pll_register_string( "usl_fr", "Рыбалка на <br/>озере", "Услуги");
 
 pll_register_string( "ob_fr", "Я даю согласие с политикой конфиденциальности <br>и обработки персональных данных", "Общие фразы");
 pll_register_string( "ob_fr", "Телефон", "Общие фразы");
