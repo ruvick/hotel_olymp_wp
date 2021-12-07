@@ -133,6 +133,16 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
         Field::make('image', 'sample_img_small_1', 'Картинка маленькая 1' )->set_width(50),
         Field::make('image', 'sample_img_small_2', 'Картинка маленькая 2' )->set_width(50),
     ));
+
+    Container::make('post_meta', 'services_sample_2', 'Дополнительные картинки')
+    ->show_on_template(array('page-services-sample.php'))
+      ->add_fields(array(   
+        Field::make('image', 'sample_2_img_vertical', 'Картинка вертикальная' )->set_width(50),
+        Field::make('image', 'sample_2_img_horizontal', 'Картинка горизонтальная' )->set_width(50),
+        Field::make('image', 'sample_2_img_small_1', 'Картинка маленькая 1' )->set_width(50),
+        Field::make('image', 'sample_2_img_small_2', 'Картинка маленькая 2' )->set_width(50),
+    ));
+
     Container::make('post_meta', 'page-spa', 'Поля для бассейна')
     ->show_on_template(array('page-spa.php'))
       ->add_fields(array(   

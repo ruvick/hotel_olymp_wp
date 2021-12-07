@@ -149,7 +149,7 @@
 				<a href = "<? echo pll_get_permalink(68); ?>" class="offers__card-img card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
-					<? echo pll_e("Гриль Hous и <br/>рыбалка");?>
+					<? echo pll_e("Рыбалка на <br/>озере");?>
 					</h4>
 				</a>
 

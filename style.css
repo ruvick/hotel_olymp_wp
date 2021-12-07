@@ -1657,7 +1657,7 @@ body.ie .ibg img {
   background-image: url("img/offers/04.jpg"); }
 
 .offers__card-img:nth-child(4) {
-  background-image: url("img/offers/05.png"); }
+  background-image: url("img/offers/05.jpg"); }
 
 .offers__card-img:nth-child(5) {
   background-image: url("img/offers/03.jpg"); }
@@ -1778,9 +1778,12 @@ body.ie .ibg img {
   background-image: url("img/services/04.jpg"); }
 
 .services__card-img:nth-child(5) {
-  background-image: url("img/services/05.jpg"); }
+    background-image: url("img/services/04-1.jpg"); }
 
 .services__card-img:nth-child(6) {
+  background-image: url("img/services/05.jpg"); }
+
+.services__card-img:nth-child(7) {
   background-image: url("img/services/06.jpg"); }
 
 .contacts__row {
@@ -2275,6 +2278,10 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 
 .sample__row {
   margin-bottom: 107px;
+}
+
+.no_b_m {
+  margin-bottom: 10px;
 }
 
 .spa-bg {
