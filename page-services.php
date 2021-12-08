@@ -55,7 +55,7 @@ get_header(); ?>
 				<a href = "<? echo pll_get_permalink(279); ?>" class="services__card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
-					<? echo pll_e("Grill <br/>hous");?>
+					<? echo pll_e("Grill <br/>house");?>
 					</h4>
 				</a>		 
 

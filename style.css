@@ -1869,7 +1869,8 @@ body.ie .ibg img {
   margin-top: 20px; }
 
 .restaurant-specific {
-  padding: 60px 0 100px 0; }
+  /* padding: 60px 0 100px 0;  */
+}
 
 .restaurant-specific__row {
   margin-bottom: 61px; }
@@ -2363,7 +2364,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   .room {
     padding-bottom: 30px; }
   .restaurant-specific {
-    padding: 35px 0; } 
+    /* padding: 35px 0;  */
+  } 
   .sample__descp {
     margin-bottom: 35px;}
   .sample__row {
@@ -2709,7 +2711,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     font-size: 16px;
     line-height: 1; }
   .restaurant-specific {
-    padding: 30px 0; }
+    /* padding: 30px 0;  */
+  }
   .restaurant__specific-item-icon_01:before {
     width: 65px;
     height: 40px; }
