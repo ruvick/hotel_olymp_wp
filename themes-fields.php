@@ -126,7 +126,7 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
       Field::make('rich_text', 'included_price', 'В стоимость входит')->set_width(100),
     ));
     Container::make('post_meta', 'services_sample', 'Дополнительные поля')
-    ->show_on_template(array('page-services-sample.php'))
+    ->show_on_template(array('page-services-sample.php', 'page-restaurant.php'))
       ->add_fields(array(   
         Field::make('image', 'sample_img_vertical', 'Картинка вертикальная' )->set_width(50),
         Field::make('image', 'sample_img_horizontal', 'Картинка горизонтальная' )->set_width(50),
@@ -135,7 +135,7 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
     ));
 
     Container::make('post_meta', 'services_sample_2', 'Дополнительные картинки')
-    ->show_on_template(array('page-services-sample.php'))
+    ->show_on_template(array('page-services-sample.php', 'page-restaurant.php'))
       ->add_fields(array(   
         Field::make('image', 'sample_2_img_vertical', 'Картинка вертикальная' )->set_width(50),
         Field::make('image', 'sample_2_img_horizontal', 'Картинка горизонтальная' )->set_width(50),
