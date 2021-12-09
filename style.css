@@ -1765,25 +1765,25 @@ body.ie .ibg img {
   .services__card-img h4 {
     z-index: 5; }
 
-.services__card-img:nth-child(1) {
+.services__card-besedka {
   background-image: url("img/services/01.jpg"); }
 
-.services__card-img:nth-child(2) {
+.services__card-spa {
   background-image: url("img/services/02.jpg"); }
 
-.services__card-img:nth-child(3) {
+.services__card-hous {
   background-image: url("img/services/03.jpg"); }
 
-.services__card-img:nth-child(4) {
+.services__card-fishing {
   background-image: url("img/services/04.jpg"); }
 
-.services__card-img:nth-child(5) {
+.services__card-grill {
     background-image: url("img/services/04-1.jpg"); }
 
-.services__card-img:nth-child(6) {
+.services__card-conf {
   background-image: url("img/services/05.jpg"); }
 
-.services__card-img:nth-child(7) {
+.services__card-rest {
   background-image: url("img/services/06.jpg"); }
 
 .contacts__row {

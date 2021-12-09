@@ -24,54 +24,56 @@ get_header(); ?>
 
 			<div class="services__row d-flex">
 
-				<a href = "<? echo pll_get_permalink(48); ?>" class="services__card-img">
+				<a href = "<? echo pll_get_permalink(40); ?>" class="services__card-img services__card-rest">
+					<div class="card-img__nuar"></div>
+					<h4>
+					<? echo pll_e("Ресторан <br/>Банкетный зал");?>
+					</h4>
+				</a>	
+
+				<a href = "<? echo pll_get_permalink(48); ?>" class="services__card-img services__card-besedka">
 					<div class="card-img__nuar"></div>
 					<h4>
 					<? echo pll_e("Панорамная <br/>беседка над водой");?>
 					</h4>
 				</a>		 
 
-				<a href = "<? echo pll_get_permalink(52); ?>" class="services__card-img">
+				<a href = "<? echo pll_get_permalink(52); ?>" class="services__card-img services__card-spa">
 					<div class="card-img__nuar"></div>
 					<h4>
 					<? echo pll_e("Бассейн и <br/>SPA комплекс");?>
 					</h4>
 				</a>		 
 
-				<a href = "<? echo pll_get_permalink(64); ?>" class="services__card-img">
+				<a href = "<? echo pll_get_permalink(64); ?>" class="services__card-img services__card-hous">
 					<div class="card-img__nuar"></div>
 					<h4>
 					<? echo pll_e("Дом для <br/>всей семьи");?>
 					</h4>
 				</a>		 
 
-				<a href = "<? echo pll_get_permalink(68); ?>" class="services__card-img">
+				<a href = "<? echo pll_get_permalink(68); ?>" class="services__card-img services__card-fishing">
 					<div class="card-img__nuar"></div>
 					<h4>
 					<? echo pll_e("Рыбалка на <br/>озере");?>
 					</h4>
 				</a>		 
 
-				<a href = "<? echo pll_get_permalink(279); ?>" class="services__card-img">
+				<a href = "<? echo pll_get_permalink(279); ?>" class="services__card-img services__card-grill">
 					<div class="card-img__nuar"></div>
 					<h4>
-					<? echo pll_e("Grill <br/>house");?>
+					<? echo pll_e("GRILL <br/>HOUSE");?>
 					</h4>
 				</a>		 
 
-				<a href = "<? echo pll_get_permalink(60); ?>" class="services__card-img">
+				<a href = "<? echo pll_get_permalink(60); ?>" class="services__card-img services__card-conf">
 					<div class="card-img__nuar"></div>
 					<h4>
 					<? echo pll_e("Оборудованные <br/>конференц-залы");?>
 					</h4>
 				</a>		 
 
-				<a href = "<? echo pll_get_permalink(40); ?>" class="services__card-img">
-					<div class="card-img__nuar"></div>
-					<h4>
-					<? echo pll_e("Ресторан <br/>Банкетный зал");?>
-					</h4>
-				</a>		 
+	 
 
 			</div>
 
