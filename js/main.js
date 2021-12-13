@@ -714,3 +714,6 @@ $('.reservNumbBtn').click(function (e) {
 
 	}
 });
+
+
+  $('figure img').parent('a').attr("data-lightbox", 'gallery');

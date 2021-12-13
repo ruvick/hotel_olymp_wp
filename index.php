@@ -15,7 +15,7 @@
 					<img src="<?php echo wp_get_attachment_image_src($item['slider_img_mob'], 'full')[0]; ?>" class="slider-about__item-mob" alt="">
 				</div>
 				<?
-				$pictIndex++;
+				$pictIndex++; 
 			}
 		}
 		?>
@@ -69,21 +69,21 @@
 				<?php foreach ($stock as $item) : ?>
 					<?php if (!empty($item['checkbox_stock'])) {
 						echo'<div class="card-img__row d-flex">
-									<div class="stock__card-img card-img" style="background-image: url(' . wp_get_attachment_image_src($item["stock_img_1"], "full")[0] . ');">
+									<a href=" ' . wp_get_attachment_image_src($item["stock_img_1"], "full")[0] . ' " data-lightbox="gallery" class="stock__card-img card-img" style="background-image: url(' . wp_get_attachment_image_src($item["stock_img_1"], "full")[0] . ');">
 										<div class="card-img__nuar"></div>
 										<h4>' . $item[get_feild_translate('stock_title_1')] . '</h4>
-									</div>		
+									</a>		
 
-									<div class="stock__card-img card-img" style="background-image: url(' . wp_get_attachment_image_src($item["stock_img_2"], "full")[0] . ');">
+									<a href=" ' . wp_get_attachment_image_src($item["stock_img_2"], "full")[0] . ' " data-lightbox="gallery" class="stock__card-img card-img" style="background-image: url(' . wp_get_attachment_image_src($item["stock_img_2"], "full")[0] . ');">
 										<div class="card-img__nuar"></div>
 										<h4>' . $item[get_feild_translate('stock_title_2')] . '</h4>
-									</div>		
+									</a>		
 								</div>';
 					} else {
-						echo '<div class="card-img card-img__wide" style="background-image: url(' . wp_get_attachment_image_src($item["stock_img"], "full")[0] . ');">
+						echo '<a href=" ' . wp_get_attachment_image_src($item["stock_img"], "full")[0] . ' " data-lightbox="gallery" class="card-img card-img__wide" style="background-image: url(' . wp_get_attachment_image_src($item["stock_img"], "full")[0] . ');">
 										<div class="card-img__nuar"></div>
 										<h4>' . $item[get_feild_translate('stock_title')] . '</h4>
-									</div>';
+									</a>';
 					}
 					?>
 				<?php endforeach; ?>

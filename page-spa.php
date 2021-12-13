@@ -35,22 +35,22 @@ get_header(); ?>
 				<?echo apply_filters( 'the_content', carbon_get_post_meta(get_the_ID(),"pool_descr")); ?>
 			</div>
 
-			<div class="spa__row">
-				<div class="spa__item-img spa__item-img_big">
+			<div class="spa__row"> 
+				<a href="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"pool_img_big"), 'full')[0];?>" data-lightbox="gallery" class="spa__item-img spa__item-img_big">
 					<img src="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"pool_img_big"), 'full')[0];?>" alt="">
-				</div>
-				<div class="spa__item-img">
+				</a> 
+				<a href="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"pool_img_1"), 'full')[0];?>" data-lightbox="gallery" class="spa__item-img">
 					<img src="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"pool_img_1"), 'full')[0];?>" alt="">
-				</div>
-				<div class="spa__item-img">
+				</a>
+				<a href="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"pool_img_2"), 'full')[0];?>" data-lightbox="gallery" class="spa__item-img">
 					<img src="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"pool_img_2"), 'full')[0];?>" alt="">
-				</div>
-				<div class="spa__item-img">
+				</a>
+				<a href="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"pool_img_3"), 'full')[0];?>" data-lightbox="gallery" class="spa__item-img">
 					<img src="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"pool_img_3"), 'full')[0];?>" alt="">
-				</div>
-				<div class="spa__item-img">
+				</a>
+				<a href="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"pool_img_4"), 'full')[0];?>" data-lightbox="gallery" class="spa__item-img">
 					<img src="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"pool_img_4"), 'full')[0];?>" alt="">
-				</div>
+				</a>
 			</div>
 
 			<h2><? echo pll_e("Хамам") ?></h2>
@@ -60,15 +60,15 @@ get_header(); ?>
 			</div>
 
 			<div class="spa__row">
-				<div class="spa__item-img">
+				<a href="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"hamam_img_1"), 'full')[0];?>" data-lightbox="gallery" class="spa__item-img">
 					<img src="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"hamam_img_1"), 'full')[0];?>" alt="">
-				</div>
-				<div class="spa__item-img">
+				</a>
+				<a href="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"hamam_img_2"), 'full')[0];?>" data-lightbox="gallery" class="spa__item-img">
 					<img src="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"hamam_img_2"), 'full')[0];?>" alt="">
-				</div>
-				<div class="spa__item-img">
+				</a>
+				<a href="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"hamam_img_3"), 'full')[0];?>" data-lightbox="gallery" class="spa__item-img">
 					<img src="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"hamam_img_3"), 'full')[0];?>" alt="">
-				</div>
+				</a>
 			</div>
 
 			<h2><? echo pll_e("Сауна") ?></h2>
@@ -78,15 +78,15 @@ get_header(); ?>
 			</div>
 
 			<div class="spa__row">
-				<div class="spa__item-img">
+				<a href="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"sauna_img_1"), 'full')[0];?>" data-lightbox="gallery" class="spa__item-img">
 					<img src="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"sauna_img_1"), 'full')[0];?>" alt="">
-				</div>
-				<div class="spa__item-img">
+				</a>
+				<a href="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"sauna_img_2"), 'full')[0];?>" data-lightbox="gallery" class="spa__item-img">
 					<img src="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"sauna_img_2"), 'full')[0];?>" alt="">
-				</div>
-				<div class="spa__item-img">
+				</a>
+				<a href="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"sauna_img_3"), 'full')[0];?>" data-lightbox="gallery" class="spa__item-img">
 					<img src="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"sauna_img_3"), 'full')[0];?>" alt="">
-				</div>
+				</a>
 			</div>
 
 		</div>
