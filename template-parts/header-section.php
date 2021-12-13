@@ -14,7 +14,7 @@
 					</nav>
 				</div> 
 
-				<a href="#reserv" class="header__btn _popup-link btn"><? echo pll_e("Забронировать") ?></a>
+				<a href="#reserv-number" class="header__btn _popup-link btn"><? echo pll_e("Забронировать") ?></a>
 
 				<div class="header__lang-switch d-flex">
 					<a href = "<? echo get_url_switcher("ru");?>" class="header__lang-switch-ru <? echo !empty(get_current_switcher("ru"))?"header__lang-switch_current":""?>">Ru</a>

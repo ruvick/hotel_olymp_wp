@@ -13,6 +13,7 @@
     "send_one2": "scp -C page-services-sample.php olimphotel@ssh.olimphotel.nichost.ru:olimphotel.com/docs/wp-content/themes/hotel/",
     "send_one3": "scp -C page-contacts.php olimphotel@ssh.olimphotel.nichost.ru:olimphotel.com/docs/wp-content/themes/hotel/",
     "send_one4": "scp -C page-restaurant.php olimphotel@ssh.olimphotel.nichost.ru:olimphotel.com/docs/wp-content/themes/hotel/",
+    "send_modal": "scp -C modal-win.php olimphotel@ssh.olimphotel.nichost.ru:olimphotel.com/docs/wp-content/themes/hotel/",
     "send_head": "scp -C header.php olimphotel@ssh.olimphotel.nichost.ru:olimphotel.com/docs/wp-content/themes/hotel/",
     "send_cat": "scp -C category.php olimphotel@ssh.olimphotel.nichost.ru:olimphotel.com/docs/wp-content/themes/hotel/",
     "send_singl": "scp -C single.php olimphotel@ssh.olimphotel.nichost.ru:olimphotel.com/docs/wp-content/themes/hotel/",

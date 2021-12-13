@@ -2348,6 +2348,23 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   color:white;
 }
 
+.reserv-number__select {
+    width: 100%;
+    min-height: 45px;
+    padding: 0 10px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
 @media (max-width: 1700px) {
   .header__container {
     max-width: inherit;
