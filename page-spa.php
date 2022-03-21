@@ -31,7 +31,7 @@ get_header(); ?>
 
 			<h1><? echo pll_e("Бассейн на") ?> 18,5 м</h1>
 
-			<div class="spa__descp">
+			<div class="spa__descp room room_nopad">
 				<?echo apply_filters( 'the_content', carbon_get_post_meta(get_the_ID(),"pool_descr")); ?>
 			</div>
 
@@ -55,7 +55,7 @@ get_header(); ?>
 
 			<h2><? echo pll_e("Хамам") ?></h2>
 
-			<div class="spa__descp">
+			<div class="spa__descp room room_nopad">
 				<?echo apply_filters( 'the_content', carbon_get_post_meta(get_the_ID(),"hamam_descr")); ?>
 			</div>
 
@@ -73,7 +73,7 @@ get_header(); ?>
 
 			<h2><? echo pll_e("Сауна") ?></h2>
 
-			<div class="spa__descp">
+			<div class="spa__descp room room_nopad">
 				<?echo apply_filters( 'the_content', carbon_get_post_meta(get_the_ID(),"sauna_descr")); ?>
 			</div>
 

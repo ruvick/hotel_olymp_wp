@@ -139,7 +139,7 @@
 					</h4>
 				</a>
 
-				<a href = "<? echo pll_get_permalink(68); ?>" class="offers__card-img card-img">
+				<a href = "<? echo pll_get_permalink(40); ?>" class="offers__card-img card-img">
 					<div class="card-img__nuar"></div>
 					<h4>
 					<? echo pll_e("Ресторан <br/>Банкетный зал");?>

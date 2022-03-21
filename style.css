@@ -1286,11 +1286,17 @@ body.ie .ibg img {
 
 .room {
   padding-bottom: 110px; }
+.room_nopad {
+  padding-bottom: 0; 
+}
   .room h2 {
     font-size: 36px;
     color: #C18B52;
     margin-top: 35px;
     margin-bottom: 32px; }
+    .room ul  {
+      margin-bottom: 20px;
+    }
   .room ul li {
     display: -webkit-box;
     display: -ms-flexbox;

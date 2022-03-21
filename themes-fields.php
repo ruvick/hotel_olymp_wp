@@ -146,7 +146,7 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
     Container::make('post_meta', 'page-spa', 'Поля для бассейна')
     ->show_on_template(array('page-spa.php'))
       ->add_fields(array(   
-        Field::make('textarea', 'pool_descr', 'Описание бассейна')->set_width(100), 
+        Field::make('rich_text', 'pool_descr', 'Описание бассейна')->set_width(100), 
         Field::make('image', 'pool_img_big', 'Картинка большая' )->set_width(20),
         Field::make('image', 'pool_img_1', 'Картинка 1' )->set_width(20),
         Field::make('image', 'pool_img_2', 'Картинка 2' )->set_width(20),
@@ -156,7 +156,7 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
     Container::make('post_meta', 'page-spa', 'Поля для хамам')
     ->show_on_template(array('page-spa.php'))
       ->add_fields(array(   
-        Field::make('textarea', 'hamam_descr', 'Описание хамам')->set_width(100), 
+        Field::make('rich_text', 'hamam_descr', 'Описание хамам')->set_width(100), 
         Field::make('image', 'hamam_img_1', 'Картинка 1' )->set_width(20),
         Field::make('image', 'hamam_img_2', 'Картинка 2' )->set_width(20),
         Field::make('image', 'hamam_img_3', 'Картинка 3' )->set_width(20),
@@ -164,7 +164,7 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
     Container::make('post_meta', 'page-spa', 'Поля для сауны')
     ->show_on_template(array('page-spa.php'))
       ->add_fields(array(   
-        Field::make('textarea', 'sauna_descr', 'Описание сауны')->set_width(100), 
+        Field::make('rich_text', 'sauna_descr', 'Описание сауны')->set_width(100), 
         Field::make('image', 'sauna_img_1', 'Картинка 1' )->set_width(20),
         Field::make('image', 'sauna_img_2', 'Картинка 2' )->set_width(20),
         Field::make('image', 'sauna_img_3', 'Картинка 3' )->set_width(20),

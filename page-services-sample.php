@@ -11,7 +11,7 @@ get_header(); ?>
 
 <main class="page">
 
-	<section id="recurring" class="recurring sample content">
+	<section id="recurring" class="recurring sample content room room_nopad">
 		<div class="container">
 
 			<?php
