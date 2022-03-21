@@ -1879,7 +1879,9 @@ body.ie .ibg img {
 }
 
 .restaurant-specific__row {
-  margin-bottom: 61px; }
+  /* margin-bottom: 61px; */
+  padding: 35px 0;
+}
 
 .restaurant__specific-item-icon_01:before {
   width: 114px;
