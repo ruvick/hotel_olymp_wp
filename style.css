@@ -2476,8 +2476,13 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   color: #c18b52;  
 }
 
-
-
+.page-text-block {
+  padding: 35px 0;
+  color: #161615;
+}
+.page-text-block-number {
+  padding-top: 0;
+}
 
 
 

@@ -22,6 +22,10 @@ get_header(); ?>
 
 			<h1><?php the_title();?></h1>
 
+			<div class="page-text-block page-text-block-number">
+				<?php the_content(); ?>
+			</div>
+
 			<div class="card-action__body">
 					<?php
 				$page_children = new WP_Query(

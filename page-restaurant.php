@@ -60,6 +60,10 @@ get_header(); ?>
 
 					</div> -->
 
+					<div class="page-text-block">
+						<?php the_content(); ?>
+					</div>
+
 					<div class="sample__row restaurant-img__row d-flex <? if (!empty(carbon_get_post_meta(get_the_ID(),"sample_2_img_vertical"))) echo "no_b_m"?>">
 
 <a href="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"sample_img_vertical"), 'full')[0];?>" data-lightbox="gallery" class="restaurant__img-big">
