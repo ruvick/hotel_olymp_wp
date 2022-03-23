@@ -60,7 +60,7 @@ get_header(); ?>
 
 					</div> -->
 
-					<div class="page-text-block">
+					<div class="page-text-block room room_nopad">
 						<?php the_content(); ?>
 					</div>
 
