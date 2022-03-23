@@ -23,10 +23,10 @@ get_header(); ?>
 			<h1>Доставка из нашего ресторана</h1>
 
       <div class="btnBlock">
-        <button class="btnBlock__link">Салаты</button>
-        <button class="btnBlock__link btnBlock__link_active">Закуски</button>
-        <button class="btnBlock__link">Первые блюда</button>
-        <button class="btnBlock__link">Горячие блюда</button>
+        <a href="#" class="btnBlock__link">Салаты</a>
+        <a href="#" class="btnBlock__link">Закуски</a>
+        <a href="#" class="btnBlock__link">Первые блюда</a>
+        <a href="#" class="btnBlock__link">Горячие блюда</a>
       </div>
 
       <div class="line-bg"></div>
@@ -199,6 +199,10 @@ get_header(); ?>
   </div>
 </div>
 
+</div>
+
+<div class="delivery-block__descp room room_nopad">
+  <?php the_content(); ?>
 </div>
 
 </div>

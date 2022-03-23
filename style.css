@@ -2389,6 +2389,13 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   margin-right: 0;
 }
 
+.btnBlock__link:hover {
+  color: #fff;
+  border: none;
+  background: #c18b52;
+  transition: all 500ms ease;
+}
+
 .btnBlock__link_active {
   color: #fff;
   border: none;
@@ -2484,7 +2491,9 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   padding-top: 0;
 }
 
-
+.delivery-block__descp {
+  padding: 20px 0;
+}
 
 
 
