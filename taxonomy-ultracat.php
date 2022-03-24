@@ -17,13 +17,6 @@ get_header(); ?>
 
 			<h1>Доставка из нашего ресторана</h1>
 
-      <!-- <div class="btnBlock">
-        <a href="#" class="btnBlock__link">Салаты</a>
-        <a href="#" class="btnBlock__link">Закуски</a>
-        <a href="#" class="btnBlock__link">Первые блюда</a>
-        <a href="#" class="btnBlock__link">Горячие блюда</a>
-      </div> -->
-
       <div class="btnBlock">
       <?php 
         $terms = get_terms(
@@ -65,15 +58,11 @@ get_header(); ?>
 
       </div>
 
-      <div class="delivery-block">
+      <div class="delivery-block__descp room room_nopad">
+        <?php the_content(); ?>
+      </div>
 
-<div class="delivery-block__descp room room_nopad">
-  <?php the_content(); ?>
-</div>
-
-<a href="tel:89202601400" class="delivery-block__descp-link btn">Сделать заказ</a>
-
-</div>
+      <a href="tel:89202601400" class="delivery-block__descp-link btn">Сделать заказ</a>
 
 		</div>
 	</section>

@@ -1,6 +1,5 @@
 <?php 
 
-
 get_header(); ?>
 
 <?php get_template_part('template-parts/header-section');?>
@@ -19,22 +18,27 @@ get_header(); ?>
 			<h1>Доставка из нашего ресторана</h1>
 
       <div class="btnBlock">
-        <a href="#" class="btnBlock__link">Салаты</a>
-        <a href="#" class="btnBlock__link">Закуски</a>
-        <a href="#" class="btnBlock__link">Первые блюда</a>
-        <a href="#" class="btnBlock__link">Горячие блюда</a>
-      </div>
-
-      <div class="btnBlock">
-			<?php $termID =  get_queried_object()->term_id;// - динамическое получение ID текущей рубрики
-					$taxonomyName = "ultracat";
-					$termchildren = get_term_children( $termID, $taxonomyName );
-
-						foreach ($termchildren as $child) {
-							$term = get_term_by( 'id', $child, $taxonomyName );
-								echo '<a href="' . get_term_link( $term->term_id, $term->taxonomy ) . '" class="main-page__btn btn <?php echo $class; ?>">' . $term->name . '</a>';
-					}
-?>
+        <?php 
+          $terms = get_terms(
+            array(
+            'taxonomy'   => 'ultracat',
+            'orderby' => 'count',
+            'order' => 'ESC',
+            'hide_empty' => false,
+            )
+          );
+          if ( ! empty( $terms ) && is_array( $terms ) ) {
+            foreach ( $terms as $term ) { 
+              $curTerm = $wp_query->queried_object;
+              $class = ( $term->name == $curTerm->name ) ? 'btnBlock__link_active' : '';
+              ?>
+              <a href="<?php echo esc_url( get_term_link( $term ) ) ?>" class="btnBlock__link <?php echo $class; ?>">
+                <?php echo $term->name; ?>
+              </a>
+              <?php
+            }
+          } 
+        ?>
       </div>
 
       <div class="line-bg"></div>
@@ -44,178 +48,21 @@ get_header(); ?>
         <h2 class="delivery-block__title"><?php single_cat_title( '', true );?></h2>
 
         <div class="prodCard__row">
-
-        <div class="prodCard__column">
-          <div class="prodCard__box">
-            <div class="prodCard__box-img">
-              <img src="<?php echo get_template_directory_uri();?>/img/delivery/01.jpg" alt="">
-            </div>
-            <div class="prodCard__box-descp">
-              <h4 class="prodCard__box-descp-title">САЛАТ ВИШНЯ</h4>
-              <p class="prodCard__box-descp-subtitle">
-                с говяжьей печенью
-                печень, микс салатов
-              </p>
-              <div class="prodCard__box-descp-flex">
-                <p class="prodCard__box-descp-flex-weight">215 г.</p>
-                <p class="prodCard__box-descp-flex-price rub">360 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="prodCard__column">
-          <div class="prodCard__box">
-            <div class="prodCard__box-img">
-              <img src="<?php echo get_template_directory_uri();?>/img/delivery/02.jpg" alt="">
-            </div>
-            <div class="prodCard__box-descp">
-              <h4 class="prodCard__box-descp-title">САЛАТ ВИШНЯ</h4>
-              <p class="prodCard__box-descp-subtitle">
-                с говяжьей печенью
-                печень, микс салатов
-              </p>
-              <div class="prodCard__box-descp-flex">
-                <p class="prodCard__box-descp-flex-weight">215 г.</p>
-                <p class="prodCard__box-descp-flex-price rub">360 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="prodCard__column">
-          <div class="prodCard__box">
-            <div class="prodCard__box-img">
-              <img src="<?php echo get_template_directory_uri();?>/img/delivery/03.jpg" alt="">
-            </div>
-            <div class="prodCard__box-descp">
-              <h4 class="prodCard__box-descp-title">САЛАТ ВИШНЯ</h4>
-              <p class="prodCard__box-descp-subtitle">
-                с говяжьей печенью
-                печень, микс салатов
-              </p>
-              <div class="prodCard__box-descp-flex">
-                <p class="prodCard__box-descp-flex-weight">215 г.</p>
-                <p class="prodCard__box-descp-flex-price rub">360 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="prodCard__column">
-          <div class="prodCard__box">
-            <div class="prodCard__box-img">
-              <img src="<?php echo get_template_directory_uri();?>/img/delivery/04.jpg" alt="">
-            </div>
-            <div class="prodCard__box-descp">
-              <h4 class="prodCard__box-descp-title">САЛАТ ВИШНЯ</h4>
-              <p class="prodCard__box-descp-subtitle">
-                с говяжьей печенью
-                печень, микс салатов
-              </p>
-              <div class="prodCard__box-descp-flex">
-                <p class="prodCard__box-descp-flex-weight">215 г.</p>
-                <p class="prodCard__box-descp-flex-price rub">360 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
+          <?php
+				    while(have_posts()):
+					    the_post();
+					    get_template_part('template-parts/product-elem');  
+				    endwhile;
+				  ?>
         </div>
 
       </div>
 
-      <div class="delivery-block">
-
-<h2 class="delivery-block__title">Горячие блюда</h2>
-
-<div class="prodCard__row">
-
-<div class="prodCard__column">
-  <div class="prodCard__box">
-    <div class="prodCard__box-img">
-      <img src="<?php echo get_template_directory_uri();?>/img/delivery/05.jpg" alt="">
-    </div>
-    <div class="prodCard__box-descp">
-      <h4 class="prodCard__box-descp-title">РУЛЬКА ПО БАВАРСКИ</h4>
-      <p class="prodCard__box-descp-subtitle">
-        с говяжьей печенью
-        печень, микс салатов
-      </p>
-      <div class="prodCard__box-descp-flex">
-        <p class="prodCard__box-descp-flex-weight">215 г.</p>
-        <p class="prodCard__box-descp-flex-price rub">360 </p>
+      <div class="delivery-block__descp room room_nopad">
+        <?php the_content(); ?>
       </div>
-    </div>
-  </div>
-</div>
 
-<div class="prodCard__column">
-  <div class="prodCard__box">
-    <div class="prodCard__box-img">
-      <img src="<?php echo get_template_directory_uri();?>/img/delivery/06.jpg" alt="">
-    </div>
-    <div class="prodCard__box-descp">
-      <h4 class="prodCard__box-descp-title">ЖУЛЬЕН С КУРИЦЕЙ</h4>
-      <p class="prodCard__box-descp-subtitle">
-        с говяжьей печенью
-        печень, микс салатов
-      </p>
-      <div class="prodCard__box-descp-flex">
-        <p class="prodCard__box-descp-flex-weight">215 г.</p>
-        <p class="prodCard__box-descp-flex-price rub">360 </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="prodCard__column">
-  <div class="prodCard__box">
-    <div class="prodCard__box-img">
-      <img src="<?php echo get_template_directory_uri();?>/img/delivery/07.jpg" alt="">
-    </div>
-    <div class="prodCard__box-descp">
-      <h4 class="prodCard__box-descp-title">ЛОСОСЬ В СОУСЕ</h4>
-      <p class="prodCard__box-descp-subtitle">
-        с говяжьей печенью
-        печень, микс салатов
-      </p>
-      <div class="prodCard__box-descp-flex">
-        <p class="prodCard__box-descp-flex-weight">215 г.</p>
-        <p class="prodCard__box-descp-flex-price rub">360 </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="prodCard__column">
-  <div class="prodCard__box">
-    <div class="prodCard__box-img">
-      <img src="<?php echo get_template_directory_uri();?>/img/delivery/08.jpg" alt="">
-    </div>
-    <div class="prodCard__box-descp">
-      <h4 class="prodCard__box-descp-title">САЛАТ ВИШНЯ</h4>
-      <p class="prodCard__box-descp-subtitle">
-        с говяжьей печенью
-        печень, микс салатов
-      </p>
-      <div class="prodCard__box-descp-flex">
-        <p class="prodCard__box-descp-flex-weight">215 г.</p>
-        <p class="prodCard__box-descp-flex-price rub">360 </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-
-<div class="delivery-block__descp room room_nopad">
-  <?php the_content(); ?>
-</div>
-
-<a href="tel:89202601400" class="delivery-block__descp-link btn">Сделать заказ</a>
-
-</div>
+      <a href="tel:89202601400" class="delivery-block__descp-link btn">Сделать заказ</a>
 
 		</div>
 	</section>

@@ -178,4 +178,21 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
         Field::make('file', 'rest_menu', 'Меню ресторана' )->set_width(20),
     ));
 
+    Container::make('post_meta', 'ultra_product_cr', 'Характеристики товара')
+    ->show_on_post_type(array( 'ultra'))
+      ->add_fields(array(   
+      Field::make( 'complex', 'offer_picture', "Галерея товара" )
+        ->add_fields( array(
+          Field::make('image', 'gal_img', 'Изображение' )->set_width(30),
+          Field::make('text', 'gal_img_sku', 'ID для модификации')->set_width(30),
+          Field::make('text', 'gal_img_alt', 'alt и title')->set_width(30)        
+      ) ),
+      Field::make('rich_text', 'prod_descrip', 'Описание товара')->set_width(100),
+      Field::make('textarea', 'offer_smile_descr', 'Краткое описание')->set_width(100),
+      Field::make('text', 'offer_weight', 'Вес')->set_width(50),
+      Field::make('text', 'offer_price', 'Цена')->set_width(50),
+      Field::make('text', 'offer_sku', 'Артикул (Базовый)')->set_width(50),
+
+  ));
+
 ?>

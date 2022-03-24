@@ -33,8 +33,11 @@ get_header(); ?>
             )
           );
           if ( ! empty( $terms ) && is_array( $terms ) ) {
-            foreach ( $terms as $term ) { ?>
-              <a href="<?php echo esc_url( get_term_link( $term ) ) ?>" class="btnBlock__link">
+            foreach ( $terms as $term ) { 
+              $curTerm = $wp_query->queried_object;
+              $class = ( $term->name == $curTerm->name ) ? 'btnBlock__link_active' : '';
+              ?>
+              <a href="<?php echo esc_url( get_term_link( $term ) ) ?>" class="btnBlock__link <?php echo $class; ?>">
                 <?php echo $term->name; ?>
               </a>
               <?php
@@ -50,12 +53,19 @@ get_header(); ?>
         <h2 class="delivery-block__title"><?php single_cat_title( '', true );?></h2>
 
         <div class="prodCard__row">
-          <?php
-				    while(have_posts()):
-					    the_post();
-					    get_template_part('template-parts/product-elem');  
-				    endwhile;
-				  ?>
+        <?
+			$my_posts = get_posts( array(
+				'numberposts' => -1,
+				'orderby'     => 'rand',
+				'post_type'   => 'ultra',
+				
+			) );
+
+			foreach ($my_posts as $element) {
+				$param = ["element" => $element];
+				get_template_part('template-parts/product', 'elem', $param); 
+			}
+		?>
         </div>
 
       </div>
