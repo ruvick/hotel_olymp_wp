@@ -35,7 +35,7 @@ fbq('init', '353894162886311');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=353894162886311&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=353894162886311&ev=PageView&noscript=1" 
 /></noscript>
 <!-- End Facebook Pixel Code -->
 
@@ -70,6 +70,14 @@ a=d.getElementsByTagName("script")
 
 </head>
 <body>
+  <!-- Скрипт корзины, отправка, личный кабинет -->
+<script>  
+  let main_page = "<?echo get_bloginfo("url"); ?>";
+  let kabinet_page = "<?echo get_the_permalink(219); ?>";
+  let bascet_page = "<?echo get_the_permalink(17); ?>"; 
+  let thencs_page = "<?echo get_the_permalink(56); ?>"; 
+  let nophoto_page = "<?echo get_bloginfo("template_url");?>/img/no-photo.jpg";
+</script> 
   <div class="wrapper">  
     <!-- Подключение  модальных окон-->
     <? include "modal-win.php";?>

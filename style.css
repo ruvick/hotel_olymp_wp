@@ -2369,6 +2369,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 
 .btnBlock {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .btnBlock__link {
@@ -2384,6 +2385,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   background: #fff;
   border: 1px solid #c18b52;
   margin-right: 46px;
+  margin-bottom: 10px;
 }
 
 .btnBlock__link:last-child {
@@ -3205,7 +3207,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     width: 100%;}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 320px) { 
   .title:before {
     width: 260px; } }
 
