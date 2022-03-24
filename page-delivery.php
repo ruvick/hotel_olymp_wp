@@ -205,6 +205,8 @@ get_header(); ?>
   <?php the_content(); ?>
 </div>
 
+<a href="tel:89202601400" class="delivery-block__descp-link btn">Сделать заказ</a>
+
 </div>
 
 		</div>

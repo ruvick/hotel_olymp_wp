@@ -1879,6 +1879,7 @@ body.ie .ibg img {
 }
 
 .restaurant-specific__row {
+  justify-content: space-between;
   /* margin-bottom: 61px; */
   padding: 35px 0;
 }
@@ -2494,6 +2495,15 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 .delivery-block__descp {
   padding: 20px 0;
 }
+
+.delivery-block__descp-link {
+  background: #A46A37;
+}
+
+
+
+
+
 
 
 
@@ -3191,6 +3201,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     max-height: 100%;}
   .line-bg {
     margin: 15px 0;}
+  .delivery-block__descp-link {
+    width: 100%;}
 }
 
 @media (max-width: 320px) {
