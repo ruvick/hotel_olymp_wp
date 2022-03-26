@@ -8,7 +8,7 @@
     "clear_r": "ssh olimphotel@ssh.olimphotel.nichost.ru \"rm olimphotel.com/docs/wp-content/themes/hotel/*.*\"",
     "send_r": "scp -C *.php *.png *.css olimphotel@ssh.olimphotel.nichost.ru:olimphotel.com/docs/wp-content/themes/hotel/",
     "send_ms": "scp -C *.css olimphotel@ssh.olimphotel.nichost.ru:olimphotel.com/docs/wp-content/themes/hotel/",
-    "send_one": "scp -C page-services.php olimphotel@ssh.olimphotel.nichost.ru:olimphotel.com/docs/wp-content/themes/hotel/",
+    "send_one": "scp -C page-delivery.php olimphotel@ssh.olimphotel.nichost.ru:olimphotel.com/docs/wp-content/themes/hotel/",
     "send_one1": "scp -C themes-fields.php olimphotel@ssh.olimphotel.nichost.ru:olimphotel.com/docs/wp-content/themes/hotel/",
     "send_one2": "scp -C page-services-sample.php olimphotel@ssh.olimphotel.nichost.ru:olimphotel.com/docs/wp-content/themes/hotel/",
     "send_one3": "scp -C page-spa.php olimphotel@ssh.olimphotel.nichost.ru:olimphotel.com/docs/wp-content/themes/hotel/",

@@ -33,42 +33,70 @@ get_header(); ?>
             )
           );
           if ( ! empty( $terms ) && is_array( $terms ) ) {
+            $cat_index = 0;
             foreach ( $terms as $term ) { 
-              $curTerm = $wp_query->queried_object;
-              $class = ( $term->name == $curTerm->name ) ? 'btnBlock__link_active' : '';
+              // $curTerm = $wp_query->queried_object;
+              // $class = ( $term->name == $curTerm->name ) ? 'btnBlock__link_active' : '';
               ?>
-              <a href="<?php echo esc_url( get_term_link( $term ) ) ?>" class="btnBlock__link <?php echo $class; ?>">
-                <?php echo $term->name; ?>
-              </a>
+                <a href="#razdel_menu_<?echo $cat_index;?>" class="btnBlock__link">
+                  <?php echo $term->name; ?>
+                </a>
               <?php
+              $cat_index++;
             }
           } 
         ?>
       </div>
 
+
+
       <div class="line-bg"></div>
+          
+      <? 
+        if ( ! empty( $terms ) && is_array( $terms ) ) {
+          $cat_index = 0;
+          foreach ( $terms as $term ) { 
+      ?> 
+        <div class="delivery-block">
+          <h2 id = "razdel_menu_<?echo $cat_index;?>" class="delivery-block__title"><?php echo $term->name; ?></h2>
+          <div class="prodCard__row"> 
+              <?
+                			// $my_posts = get_posts( array(
+                      //   'numberposts' => -1,
+                      //   'post_type'   => 'ultra',
+                      //   'category' => $term->term_id
+                      // ) );
+                
+                      $my_posts = new WP_Query( array(
+                        'tax_query' => array(
+                          array(
+                            'taxonomy' => 'ultracat',
+                            'field'    => 'id',
+                            'terms'    => $term->term_id
+                          )
+                        )
+                      ) );
+                      // foreach ($my_posts->posts as $element) {
+                      //   $param = ["element" => $element];
+                      //   get_template_part('template-parts/product', 'elem', $param); 
+                      // }
 
-      <div class="delivery-block">
-
-        <h2 class="delivery-block__title"><?php single_cat_title( '', true );?></h2>
-
-        <div class="prodCard__row">
-        <?
-			$my_posts = get_posts( array(
-				'numberposts' => -1,
-				'orderby'     => 'rand',
-				'post_type'   => 'ultra',
-				
-			) );
-
-			foreach ($my_posts as $element) {
-				$param = ["element" => $element];
-				get_template_part('template-parts/product', 'elem', $param); 
-			}
-		?>
+                      while ( $my_posts->have_posts() ) {
+                        $my_posts->the_post();
+                      
+                        get_template_part('template-parts/product', 'elem'); 
+                      }
+                      wp_reset_postdata();
+              ?>
+          </div>
         </div>
+      <?
+            $cat_index++;
+          }
+        }
+      ?>
 
-      </div>
+
 
       <div class="delivery-block">
 
